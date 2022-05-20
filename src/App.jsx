@@ -5,20 +5,24 @@ import Contact from './components/Contact';
 import Footer from './components/Footer';
 import Home from './components/Home';
 import Navbar from './components/Navbar';
+import Services from './components/Services';
 
 
 
 function App() {
   return (
-    <Router>
+    <div className='App'>
+        <Router>
       <Navbar/>
       <Routes>
           <Route path='/' element={<Home/>}></Route>
           <Route path='/about' element={<About/>}></Route>
+          <Route path='/services' element={<Services/>}></Route>
           <Route path='/contact' element={<Contact/>}></Route>
       </Routes>
       <Footer/>
     </Router>
+    </div>
   );
 }
 
