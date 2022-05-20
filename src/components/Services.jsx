@@ -11,7 +11,7 @@ const Services = () => {
         <div className="service-card">Investment</div>
         <div className="service-card">Consulting & Advisory Services</div>
         <div className="service-card">Trade</div>
-
+    
         <div className="industries">
             <p>Clemmeridian Group so far has been able to work in various industries including</p>
             <ul></ul>
