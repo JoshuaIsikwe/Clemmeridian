@@ -64,7 +64,7 @@ nav{
 }
 .home-description{
     display: flex;
-    
+    flex-wrap: wrap;
 }
 .desc-left{
     flex: 1;
@@ -72,11 +72,15 @@ nav{
     align-items: center;
     margin-right: 2rem;
 }
+.desc-left img{
+    height: 90vh;
+    margin: auto;
+}
 .desc-right{
     display: flex;
     flex: 1;
     flex-direction: column;
-    
+    margin: 50px;
 }
 .home-services{
    background-color: black;
@@ -345,6 +349,37 @@ nav{
 /*Services*/
 .page-title{
     margin: 100px;
+}
+.service-section{
+    display: flex;
+    height: 80vh;
+    width: 80%;
+   margin: 50px auto;
+   border-radius: 50px;
+}
+.service-card{
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+}
+
+.services-box-name, .services-box-icon{
+    height: 40vh ;
+    background-color: blue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.services-box-name:hover{
+    background-color: black;
+    transform: translateY(-50px);
+    transition: .5s;
+}
+.services-box-icon:hover{
+    background-color: red;
+    transform: translateY(50px);
+    transition: .5s;
+    font-size: 50px;
 }
 /*Responsiveness*/
 

@@ -33,11 +33,11 @@ const About = () => {
             <div className='line'></div>
             <p>Our core values define who we are and how we treat our clients. These values shaped our character and are represented by the acronym PIPIR.</p>
             <ul>
-              <li>Professionalism…. our skill is guaranteed for you</li>
-              <li>-Integrity…. we are courageous to do what is right</li>
-              <li>-Proactivity …. we identify and deal with challenges upfront.</li>
-              <li>-Innovation …. we are creative in our approach to things.</li>
-              <li>-Responsiveness …. Your needs are promptly met.</li>
+              <li>Professionalism - our skill is guaranteed for you</li>
+              <li>Integrity - we are courageous to do what is right</li>
+              <li>Proactivity - we identify and deal with challenges upfront.</li>
+              <li>Innovation - we are creative in our approach to things.</li>
+              <li>Responsiveness - Your needs are promptly met.</li>
             </ul>
             <div className='line'></div>
         </div>
