@@ -364,22 +364,30 @@ nav{
 }
 
 .services-box-name, .services-box-icon{
-    height: 40vh ;
-    background-color: blue;
+    height: 40vh ;    
+    background-color: blueviolet;
     display: flex;
     align-items: center;
     justify-content: center;
 }
+.services-box-icon img{
+    height: 100%;
+    width: 100%;
+}
+.services-box-name h2{
+    font-weight: bold;
+    text-transform: uppercase;
+}
 .services-box-name:hover{
-    background-color: black;
+    background-color: red;
     transform: translateY(-50px);
     transition: .5s;
 }
 .services-box-icon:hover{
-    background-color: red;
     transform: translateY(50px);
     transition: .5s;
     font-size: 50px;
+    opacity: 0.9;
 }
 /*Responsiveness*/
 
