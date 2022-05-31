@@ -15,7 +15,7 @@ const Home = () => {
             <img src={africa} alt="africa" />
             </div>
             <div className='desc-right'>
-              <h2>Untitled</h2>
+              <h2>Clemmeridian Group</h2>
               
               <p>Clemmeridian Group is a consulting and business development agency with a pan-African focus. With over 30 years of shared shareholder's expertise, Clemmeridian Group takes pride in providing superior Consulting & Advisory Services, Investment, and Trade across Africa. Creating access and services for a class of potential investors by providing investment management and other financial services to intended investors and those looking to explore more about the African market. </p>
               <p>As the decision to invest in Africa becomes more prevalent, we are here to assist you in uncovering economic opportunities that match your focus, assessing potential risks, and navigating through the roadblocks to your intended destination.</p>

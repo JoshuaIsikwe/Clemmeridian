@@ -18,27 +18,43 @@ const About = () => {
 
         <div className="about-services">
           <div className="about-card">
-              <h3>Vision</h3>
+              <h2>Vision</h2>
               <div className='line'></div>
               <p>To be a world leader at connecting investors to Africa business opportunities</p>
           </div>
           <div className="about-card">
-            <h3>Mission</h3>
+            <h2>Mission</h2>
             <div className='line'></div>
             <p>To identify business opportunities in Africa for our clients, and navigate through the challenges, to create and multiply wealth for our stakeholders</p>
           </div>
         </div>
         <div className="values">
-            <h3>Values</h3>
+            <h2>Values</h2>
             <div className='line'></div>
             <p>Our core values define who we are and how we treat our clients. These values shaped our character and are represented by the acronym PIPIR.</p>
-            <ul>
-              <li>Professionalism - our skill is guaranteed for you</li>
-              <li>Integrity - we are courageous to do what is right</li>
-              <li>Proactivity - we identify and deal with challenges upfront.</li>
-              <li>Innovation - we are creative in our approach to things.</li>
-              <li>Responsiveness - Your needs are promptly met.</li>
-            </ul>
+
+            <div className='values-section'>
+              <div className="value-row">
+                <div className='value-item'>
+                    <i class="fa-solid fa-circle-notch"></i><div className='value-item-text'><h2>Professionalism</h2><p>Our skill is guaranteed for you.</p></div>
+                </div>
+                <div className='value-item'>
+                    <i class="fa-solid fa-circle-notch"></i><div className='value-item-text'><h2>Integrity</h2><p>We are courageous to do what is right.</p></div>
+                </div>
+                <div className='value-item'>
+                    <i class="fa-solid fa-circle-notch"></i><div className='value-item-text'><h2>Proactivity</h2><p>We identify and deal with challenges upfront.</p></div>
+                </div>
+              </div>
+
+              <div className="value-row">
+                <div className='value-item'>
+                    <i class="fa-solid fa-circle-notch"></i><div className='value-item-text'><h2>Innovation</h2><p>We are creative in our approach to things.</p></div>
+                </div>
+                <div className='value-item'>
+                    <i class="fa-solid fa-circle-notch"></i><div className='value-item-text'><h2>Responsiveness</h2><p>Your needs are promptly met.</p></div>
+                </div>
+              </div>
+            </div>
             <div className='line'></div>
         </div>
 

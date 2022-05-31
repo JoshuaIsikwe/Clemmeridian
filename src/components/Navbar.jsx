@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
 import "./style.css"
-import logo from "../images/logo.png"
+//import logo from "../images/logo.png"
 
 class Navbar extends Component {
   constructor(props) {
@@ -18,7 +18,6 @@ class Navbar extends Component {
       <nav>
       <div className='logo'>
       <Link className='logo-link' to="/"><h4>Clemmeridian</h4></Link>
-      <img src={logo} alt="" />
       </div>
       <ul className={this.state.clicked ? 'nav-links active': 'nav-links'}>
           <Link className='nav-li' to="/">Home</Link>
