@@ -88,7 +88,7 @@ nav{
     font-size: 33px;
 }
 .home-services{
-   background-image: linear-gradient(red,blue);
+   background-image: linear-gradient(blue,rgb(85, 85, 220));
    width: 100%;
    padding: 100px 0px;
 }
@@ -132,7 +132,7 @@ nav{
 
 }
 .pra p{
-    color: red;
+    color: white;
     font-size: 16px;
     line-height: 27px;
     margin-bottom: 25px;

@@ -38,7 +38,7 @@ const Home = () => {
                 </div>
               </div>
               <div className="card">
-                <i class="fa-solid fa-user"></i>
+              <i class="fa-solid fa-money-bill-trend-up"></i>
                 <h5>Investment</h5>
                 <div className='pra'>
                   <p>We focus on business development and research</p>
@@ -46,7 +46,7 @@ const Home = () => {
                 </div>
               </div> 
               <div className="card">
-                <i class="fa-solid fa-user"></i>
+                <i class="fa-solid fa-scale-balanced"></i>
                 <h5>Trade</h5>
                 <div className='pra'>
                   <p>We focus on the importation and exportation of products within the African market and the rest of the world</p>
