@@ -28,12 +28,18 @@ const Services = () => {
         </div>
         
         <div className="industries">
-            <h3>Clemmeridian Group so far has been able to work in various industries including</h3>
-            <ul></ul>
-            <ul></ul>
-            <ul></ul>
-            <ul></ul>
-            <ul></ul>
+            <h3>Clemmeridian Group so far has been able to work in various industries including</h3>                                  
+            <div className="list">
+              <ul>Oil & Gas  </ul>
+              <ul>Agriculture</ul>
+              <ul>Renewable Energy</ul>
+              <ul>Financial Services</ul>
+              <ul>Transportation</ul>
+              <ul>Retail</ul>
+              <ul>Public and Social Sector</ul>
+              <ul>Private Equity & Principal Investors</ul>
+              <ul>Real Estate</ul>
+            </div>
         </div>
     </div>
   )
