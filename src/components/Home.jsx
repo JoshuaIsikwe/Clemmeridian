@@ -1,16 +1,59 @@
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import React from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import africa from "../images/Africa.png"
 import logo from "../images/logo.png"
+import 'bootstrap/dist/css/bootstrap.css';
+import { Carousel } from 'react-bootstrap'
+import { useInView } from 'react-intersection-observer';
+
+
 const Home = () => {
+  const { ref: myRef, inView: elementVisibility } = useInView();
+
   return (
     <div className="home">
-        <div className="home-header">
-          <img src={logo} alt="" />
-        </div>
+         <div className='carousel'>
+         <Carousel variant='dark'>
+            <Carousel.Item>
+              <img
+                className="d-block w-100"
+                src="https://media.istockphoto.com/photos/businessman-using-a-computer-to-concept-of-fund-financial-investment-picture-id1360521209?b=1&k=20&m=1360521209&s=170667a&w=0&h=GcwijqRDOroH5-hQdZ--ksLgOjCMuq1kqZRP30kSZKA="
+                alt="First slide"
+                        />
+              <Carousel.Caption>
+                <h3 >Clemmeridian Investment Ltd</h3>
+                <h4>Solution provider to those who wish to engage in Africa </h4>
+              </Carousel.Caption>
+            </Carousel.Item>
+            <Carousel.Item>
+              <img
+                className="d-block w-100"
+                src="https://acute.com.cy/wp-content/uploads/2015/10/management-consulting.jpg"
+                alt="Second slide"
+              />
+
+              <Carousel.Caption>
+                <h3 >Clemmeridian Consults </h3>
+                <h4>Tax and financial management consulting</h4></Carousel.Caption>
+            </Carousel.Item>
+            <Carousel.Item>
+              <img
+                className="d-block w-100"
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9iJfzW_j1m4GUG7JW7yuH2GDBere6vHRWVQ&usqp=CAU"
+                alt="Third slide"
+              />
+
+              <Carousel.Caption>
+                <h3>Clemmeridian Care Foundation </h3>
+                
+              </Carousel.Caption>
+            </Carousel.Item>
+        </Carousel>
+         </div>
         <div className="home-body">
-          <div className="home-description">
+          <div ref={myRef} className="home-description">
+            <p>{elementVisibility? 'yes': 'no'}</p>
             <div className='desc-left'>
             <img src={africa} alt="africa" />
             </div>

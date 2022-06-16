@@ -45,7 +45,29 @@ nav{
 .home{
 
 }
+.carousel-caption {
+    position: absolute;
+    top: 25%;
+    
+}
+.carousel h4{
+    text-align: left;
+}
+.carousel h3 {
+    color: red;
+    text-transform: uppercase;
+    font-weight: 700;
+    text-align: left;
+}
+.carousel img{
+    width:10px;
+    height: 100vh;
+    object-fit: cover ;
+    opacity: 0.9;
+    position: relative;
+}
 
+/*
 .home-header{
     height: 70vh;
     background-color: #fafafa;
@@ -57,6 +79,7 @@ nav{
 .home-header img{
     height: 70vh;   
 }
+*/
 .home-body{
     margin-top: 100px;
     color: red;
@@ -67,6 +90,7 @@ nav{
     display: flex;
     flex-wrap: wrap;
 }
+
 .desc-left{
     flex: 1;
     display: flex;
