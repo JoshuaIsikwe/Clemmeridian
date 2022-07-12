@@ -671,6 +671,7 @@ textarea.input{
 }
 /*Footer*/
 .footer{
+    margin-top: 200px;
     bottom: 0;
     right: 0;
     left: 0;
