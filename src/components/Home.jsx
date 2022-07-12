@@ -18,7 +18,7 @@ import { useInView } from 'react-intersection-observer';
 
 
 const Home = () => {
- 
+  
   return (
     <div  className="home">
        
@@ -42,7 +42,7 @@ const Home = () => {
                     alt="2nd slide"
                             />
                   <Carousel.Caption>
-                    <h2 >Clemmeridian Investment</h2>
+                    <h2 >Clemmeridian Investment </h2>
                     <h4>Solution provider to those who wish to engage in Africa </h4>
                   </Carousel.Caption>
                 </Carousel.Item>
@@ -83,7 +83,7 @@ const Home = () => {
             <div className='desc-left'>
               <img  src={africa} alt="africa" />
             </div>
-            <div  className='desc-right'>
+            <div className='desc-right'>
                <p>As the decision to invest in Africa becomes more prevalent, we are here to assist you in uncovering economic opportunities that match your focus, assessing potential risks, and navigating through the roadblocks to your intended destination.</p>
               <p>In Clemmeridian we see Africa’s challenges as business opportunities. We are business enablers.</p>
             </div> 

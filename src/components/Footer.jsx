@@ -5,8 +5,23 @@ const Footer = () => {
   return (
     <div className='footer'>
         <div className="footer-container">
-            <div className="f-left"><h4>Created by Joshua Isikwe</h4></div>
-            <div className="f-right"><h5>Powered by React, NodeJS & Carter</h5></div>
+            <h3>Clemmeridian Group</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, corporis.</p>
+            <ul className='footer-socials'>
+              <li>
+                <a href="">
+                  <i className="fab fa-facebook-f"></i>
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  <i className="fab fa-linkedin-in"></i>
+                </a>
+              </li>
+            </ul>
+        </div>
+        <div className="footer-bottom">
+          <p>Copyright &copy;2022 Clemmeridian Group. Designed by <span>Underscore_</span></p>
         </div>
     </div>
   )
