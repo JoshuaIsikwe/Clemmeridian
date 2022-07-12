@@ -2,7 +2,7 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import React, { useEffect, useRef, useState } from 'react'
 import africa from "../images/Africa.png"
-import logo from "../images/logo.png"
+import logo from "../images/logo.jpg"
 import 'bootstrap/dist/css/bootstrap.css';
 import { Carousel } from 'react-bootstrap'
 import { Link } from 'react-router-dom';
@@ -42,7 +42,7 @@ const Home = () => {
                     alt="2nd slide"
                             />
                   <Carousel.Caption>
-                    <h2 >Clemmeridian Investment </h2>
+                    <h2 >Clemmeridian Investment Ltd </h2>
                     <h4>Solution provider to those who wish to engage in Africa </h4>
                   </Carousel.Caption>
                 </Carousel.Item>
@@ -55,7 +55,8 @@ const Home = () => {
 
                   <Carousel.Caption>
                     <h2 >Clemmeridian Consults </h2>
-                    <h4>Tax and financial management consulting</h4></Carousel.Caption>
+                    <h4>Tax and financial management consulting</h4>
+                    </Carousel.Caption>
                 </Carousel.Item>
                 <Carousel.Item>
                   <img
@@ -77,7 +78,9 @@ const Home = () => {
           <div className="home-description">
 
             <div className='intro'>
-            <p>Clemmeridian Group is a consulting and business development agency with a pan-African focus. With over 30 years of shared shareholder's expertise, Clemmeridian Group takes pride in providing superior Consulting & Advisory Services, Investment, and Trade across Africa. Creating access and services for a class of potential investors by providing investment management and other financial services to intended investors and those looking to explore more about the African market. </p>
+              <p>
+              Clemmeridian Group is a group of entities with pan-African focus. These entities are Clemmeridian Investment Ltd, Clemmeridian Consults and Clemmeridian Care Foundation. With over 30 years of shared shareholder's expertise, Clemmeridian Group takes pride in providing superior services to its clients and stakeholders. 
+              </p>
             </div>
             
             <div className='desc-left'>
@@ -122,7 +125,7 @@ const Home = () => {
                 <h5>Trade</h5>
                 <div className='pra'>
                   <p>We focus on the importation and exportation of products within the African market and the rest of the world</p>
-                  <Link className='button' to="/contact">Read more</Link>
+                  <Link className='button' to="/services">Read more</Link>
                 </div>
               </div>
             </div>
