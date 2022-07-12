@@ -1,5 +1,5 @@
 import React from 'react'
-import trade from '../images/trade.jpg'
+import foundation from '../images/Foundation.jpg'
 import "./style.css"
 
 
@@ -7,12 +7,14 @@ const Foundation = () => {
   return (
     <div>
         <div className="header">
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDQDbeeEk2IXSbCd0fTws86FxfBcKEX-OLiQ&usqp=CAU" alt="" />
+        <img src={foundation} alt="Clemmeridian Care Foundation" />
+        <div class="division-title">Clemmeridian Care Foundation</div>
+        <div class="division-line"></div>
         </div>
         <div className="foundation-body">
             <div>
-                <h1>Clemmeridian Care Foundation</h1>
-                <div className='line'></div>
+               
+                <div className='line-1'></div>
              
                 <div className='section-1'>
                   <div className='left-section' >

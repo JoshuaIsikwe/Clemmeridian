@@ -30,13 +30,15 @@ nav{
 
 .nav-links{
     display: flex;
+    
+    align-items: center;
     justify-content:space-around;
     width:50%
 }
 .nav-li{
     text-decoration: none;
     color: blue;
-    padding: 4px;
+    padding: 5px;
 }
 .nav-li:hover{
     color: white;
@@ -57,9 +59,10 @@ nav{
 .carousel h4{
     text-align: left;
 }
-.carousel h3 {
+.carousel h2 {
     color: red;
     text-transform: uppercase;
+    font-size: 40px;
     font-weight: 700;
     text-align: left;
 }
@@ -97,6 +100,7 @@ nav{
 .home-description{
     display: flex;
     flex-wrap: wrap;
+    margin-bottom: 100px;
 }
 
 .desc-left{
@@ -256,6 +260,13 @@ nav{
     min-height: 2px;
     width: 40%;
     margin: auto;
+}
+.line-1{
+    background-color: red;
+    min-height: 2px;
+    width: 40%;
+    margin: auto;
+    margin-top: 150px;
 }
 .about-card{
     color: blue;
@@ -599,16 +610,36 @@ textarea.input{
     transform: translate(181%,11%);
     opacity: 0.2;
 }
-/*Foundation*/
+/*Company structure Pages (Investment, Consults, Foundation)*/
 .header{
+    position: relative;
+    text-align: center;
     height: 80vh;
     width: 100%;
     margin-bottom: 70px;
+    color: red;
 }
 .header img{
     height: 100%;
     width: 100%;
     object-fit: cover;
+}
+.division-title{
+    position: absolute;
+  bottom: 130px;
+  left: 16px;
+  font-size: 50px;
+  font-weight: 600;
+  text-align: justify;
+  text-transform: uppercase;
+}
+.division-line{
+    position: absolute;
+  bottom: 100px;
+  left: 16px;
+  min-height: 10px;
+  width: 70%;
+  background: linear-gradient(to right,red,rgb(60, 60, 199));;
 }
 .section-1{
     display: flex;
@@ -628,10 +659,12 @@ textarea.input{
 }
 .left-section li{
     list-style: circle;
+    margin: 20px;
 }
 .p-bold{
     font-weight: bold;
     color: red;
+    font-size: large;
 }
 .right-section{
     padding: 50px;

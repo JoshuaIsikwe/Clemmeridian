@@ -1,16 +1,18 @@
 import React from 'react'
-import investment from  "../images/Investment.jpg"
+import investment from  "../images/Investment1.jpg"
 
 const Investment = () => {
   return (
     <div>
     <div className="header">
-    <img src={investment} alt="" />
+      <img src={investment} alt="Clemmeridian Investment" />
+      <div class="division-title">Clemmeridian Investment</div>
+      <div class="division-line"></div>
     </div>
     <div className="foundation-body">
         <div>
-            <h1>CLEMMERIDIAN INVESTMENT</h1>
-            <div className='line'></div>
+            
+            <div className='line-1'></div>
          
             <div className='section-1'>
               <div className='left-section' >

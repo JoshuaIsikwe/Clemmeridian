@@ -25,6 +25,7 @@ class Navbar extends Component {
       </div>
       <ul className={this.state.clicked ? 'nav-links active': 'nav-links'}>
           <Link className='nav-li' to="/">Home</Link>
+          
           <DropdownButton variant ="" id="dropdown-basic-button" title={<Link className='nav-li' to="/about">Our Company</Link>}>
             <Dropdown.Item><Link className='nav-li' to="/investment" >Investment</Link></Dropdown.Item>
             <Dropdown.Item ><Link className='nav-li' to="/consult" >Consulting</Link></Dropdown.Item>

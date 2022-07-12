@@ -6,9 +6,10 @@ import logo from "../images/logo.png"
 import 'bootstrap/dist/css/bootstrap.css';
 import { Carousel } from 'react-bootstrap'
 import { Link } from 'react-router-dom';
-//import gsap, { CSSPlugin } from 'gsap';
-//import ScrollTrigger from 'gsap/ScrollTrigger';
-//import { Power3 } from 'gsap/gsap-core';
+import gsap, { CSSPlugin } from 'gsap';
+import ScrollTrigger from 'gsap/ScrollTrigger';
+import { Power3 } from 'gsap/gsap-core';
+import { useInView } from 'react-intersection-observer';
 
 
 
@@ -17,19 +18,10 @@ import { Link } from 'react-router-dom';
 
 
 const Home = () => {
-
-  //let images = useRef(null);
-
- // let tl = gsap.timeline();
- // useEffect(() =>{
-    
-    //const africaImage = images.firstElementChild;
-    //tl.from(africaImage, {duration: 1.2, y: 1200, ease: Power3.easeOut})
-    //.from(africaImage.firstElementChild, {duration:2, scale: 1.5, ease: Power3.easeOut})
-  //})
+ 
   return (
     <div  className="home">
-      
+       
          <div className='carousel'>
             <Carousel variant='dark'>
                 <Carousel.Item>
@@ -39,7 +31,7 @@ const Home = () => {
                     alt="Clemmeridian Logo"
                             />
                   <Carousel.Caption>
-                    <h3 >Clemmeridian Group</h3>
+                    <h2 >Clemmeridian Group</h2>
                     <h4>those who wish to engage in Africa </h4>
                   </Carousel.Caption>
                 </Carousel.Item>
@@ -50,7 +42,7 @@ const Home = () => {
                     alt="2nd slide"
                             />
                   <Carousel.Caption>
-                    <h3 >Clemmeridian Investment Ltd</h3>
+                    <h2 >Clemmeridian Investment</h2>
                     <h4>Solution provider to those who wish to engage in Africa </h4>
                   </Carousel.Caption>
                 </Carousel.Item>
@@ -62,7 +54,7 @@ const Home = () => {
                   />
 
                   <Carousel.Caption>
-                    <h3 >Clemmeridian Consults </h3>
+                    <h2 >Clemmeridian Consults </h2>
                     <h4>Tax and financial management consulting</h4></Carousel.Caption>
                 </Carousel.Item>
                 <Carousel.Item>
@@ -73,7 +65,7 @@ const Home = () => {
                   />
 
                   <Carousel.Caption>
-                    <h3>Clemmeridian Care Foundation </h3>
+                    <h2>Clemmeridian Care Foundation </h2>
                     
                   </Carousel.Caption>
                 </Carousel.Item>
@@ -91,7 +83,7 @@ const Home = () => {
             <div className='desc-left'>
               <img  src={africa} alt="africa" />
             </div>
-            <div className='desc-right'>
+            <div  className='desc-right'>
                <p>As the decision to invest in Africa becomes more prevalent, we are here to assist you in uncovering economic opportunities that match your focus, assessing potential risks, and navigating through the roadblocks to your intended destination.</p>
               <p>In Clemmeridian we see Africa’s challenges as business opportunities. We are business enablers.</p>
             </div> 
