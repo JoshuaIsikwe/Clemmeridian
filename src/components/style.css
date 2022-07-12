@@ -170,6 +170,7 @@ nav{
 .home-service-card i:hover{
     transform: scale(1.10);
     transition: .5s;
+    color: blueviolet;
 }
 .home-service-card h5{
     color: black;
@@ -208,6 +209,7 @@ nav{
 }
 .home-service-card .button:hover{
     background-color: transparent;
+    color: #555;
     border: 2px solid red;
     cursor: pointer;
 }
@@ -677,7 +679,7 @@ textarea.input{
     left: 0;
     background: linear-gradient(rgb(85, 85, 220),rgb(100, 100, 224));
     height: auto;
-    width: 100vw;
+    width: 100%;
     font-family: "Open Sans";
     padding-top: 40px;
     color: #fff;

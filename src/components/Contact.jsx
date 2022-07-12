@@ -1,5 +1,5 @@
 import React from 'react'
-import together from  "../images/teamwork-puzzle.jpg"
+import together from  "../images/together.jpg"
 
 const inputs = document.querySelectorAll(".input");
 function focusFunc(){

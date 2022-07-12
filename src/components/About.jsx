@@ -1,6 +1,6 @@
 import React from 'react'
 import "./style.css"
-import together from  "../images/teamwork-puzzle.jpg"
+import together from  "../images/together.jpg"
 
 const About = () => {
   return (

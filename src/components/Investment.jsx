@@ -6,7 +6,7 @@ const Investment = () => {
     <div>
     <div className="header">
       <img src={investment} alt="Clemmeridian Investment" />
-      <div class="division-title">Clemmeridian Investment</div>
+      <div class="division-title">Clemmeridian Investment Ltd</div>
       <div class="division-line"></div>
     </div>
     <div className="foundation-body">
