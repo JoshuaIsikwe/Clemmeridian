@@ -147,17 +147,39 @@ const Services = () => {
         </div>
         
         <div className="industries">
-            <h3>Clemmeridian Group so far has been able to work in various industries including</h3>                                  
+            <h4>Clemmeridian Group so far has been able to work in various industries including;</h4>                                  
             <div className="list">
-              <ul>Oil & Gas  </ul>
-              <ul>Agriculture</ul>
-              <ul>Renewable Energy</ul>
-              <ul>Financial Services</ul>
-              <ul>Transportation</ul>
-              <ul>Retail</ul>
-              <ul>Public and Social Sector</ul>
-              <ul>Private Equity & Principal Investors</ul>
-              <ul>Real Estate</ul>
+              <div className='left-list'>
+                <div className="list-item">
+                <i class="fa-solid fa-wheat-awn"></i> <p>Agriculture </p>
+                </div>
+                <div className="list-item">
+                <i class="fa-solid fa-solar-panel"></i> <p>Renewable Energy </p>
+                </div>
+                <div className="list-item">
+                  <i class="fa-solid fa-certificate"></i> <p>Retail </p>
+                </div>
+                <div className="list-item">
+                <i class="fa-solid fa-chart-line"></i> <p>Private Equity & Principal Investors </p>
+                </div>
+                <div className="list-item">
+                <i class="fa-solid fa-house-chimney-window"></i> <p>Real Estate</p>
+                </div>
+              </div>
+              <div className='right-list'>
+                <div className="list-item">
+                <i class="fa-solid fa-oil-well"></i> <p>Oil & Gas </p>
+                </div>
+                <div className="list-item">
+                  <i class="fa-solid fa-coins"></i> <p>Financial Services</p>
+                </div>
+                <div className="list-item">
+                <i class="fa-solid fa-truck"></i> <p>Transportation </p>
+                </div>
+                <div className="list-item">
+                  <i class="fa-solid fa-certificate"></i> <p>Public and Social Sector </p>
+                </div>
+              </div>
             </div>
         </div>
     </div>

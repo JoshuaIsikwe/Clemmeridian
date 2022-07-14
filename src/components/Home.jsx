@@ -55,7 +55,7 @@ const Home = () => {
 
                   <Carousel.Caption>
                     <h2 >Clemmeridian Consults </h2>
-                    <h4>Tax and financial management consulting</h4>
+                    <h4>Tax and financial management consulting, business development and training</h4>
                     </Carousel.Caption>
                 </Carousel.Item>
                 <Carousel.Item>
@@ -67,6 +67,7 @@ const Home = () => {
 
                   <Carousel.Caption>
                     <h2>Clemmeridian Care Foundation </h2>
+                    <h4>Giving back to the society</h4>
                     
                   </Carousel.Caption>
                 </Carousel.Item>
@@ -101,7 +102,7 @@ const Home = () => {
           
           <div className="home-services">
             <div className="services-title">
-              <h2>Our core services</h2>
+              <h2>Our Subsidiary services</h2>
             </div>
             <div className="box">
               <div className="home-service-card">
