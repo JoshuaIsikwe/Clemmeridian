@@ -6,7 +6,7 @@ const Footer = () => {
     <div className='footer'>
         <div className="footer-container">
             <h3>Clemmeridian Group</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, corporis.</p>
+            <p>Those who chose to engage in Africa</p>
             <ul className='footer-socials'>
               <li>
                 <a href="">

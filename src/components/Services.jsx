@@ -2,7 +2,7 @@ import React from 'react'
 import "./style.css"
 import investment from  "../images/Investment.jpg"
 import consult from  "../images/consult.jpg"
-import trade from  "../images/trade.jpg"
+import training from  "../images/training.jpg"
 
 const Services = () => {
   return (
@@ -22,8 +22,8 @@ const Services = () => {
             <div className='services-box-name'><h2>Consulting & Advisory Services</h2></div>
           </div>
           <div className="service-card">
-            <div className='services-box-name'><h2>Trade</h2></div>
-            <div className='services-box-icon'><img src={trade} alt="" /></div>
+            <div className='services-box-name'><h2>Business Development & Training</h2></div>
+            <div className='services-box-icon'><img src={training} alt="" /></div>
           </div>
         </div>
 
@@ -36,7 +36,7 @@ const Services = () => {
             Investors are in search of new markets and opportunities. Almost all markets except Africa are crowded up. Consequently, the remaining great frontier is Africa as every challenge there presents a great business opportunity!
             </p>
             <p>
-            We identify these opportunities and structure them into profitable projects for relevant entities, to the benefit of all stakeholders. These include:
+            We identify these opportunities and structure them into profitable projects for relevant entities, to the benefit of all stakeholders. These include: Infrastructural opportunities and projects, Major bids/tenders for public and private sector supplies and others.
             </p>
           </div>
           <div className="service-item">
@@ -56,9 +56,6 @@ const Services = () => {
             </p>
             <p>
             However, the challenge for most entities is the ability to identify the right business opportunity and secure the necessary approvals for take-off. It is even more challenging for those who do not fully understand the African market.
-            </p>
-            <p>
-              We are therefore here to meet these needs!
             </p>
           </div>
           <div className="service-item">
@@ -147,7 +144,7 @@ const Services = () => {
         </div>
         
         <div className="industries">
-            <h4>Clemmeridian Group so far has been able to work in various industries including;</h4>                                  
+            <h4>Clemmeridian Group so far has been able to work in various sectors</h4>                                  
             <div className="list">
               <div className='left-list'>
                 <div className="list-item">

@@ -19,10 +19,12 @@ import { useInView } from 'react-intersection-observer';
 
 const Home = () => {
   
+
+  
   return (
     <div  className="home">
        
-         <div className='carousel'>
+         <section className='carousel'>
             <Carousel variant='dark'>
                 <Carousel.Item>
                   <img
@@ -32,7 +34,7 @@ const Home = () => {
                             />
                   <Carousel.Caption>
                     <h2 >Clemmeridian Group</h2>
-                    <h4>those who wish to engage in Africa </h4>
+                    <h4>Those who wish to engage in Africa </h4>
                   </Carousel.Caption>
                 </Carousel.Item>
                 <Carousel.Item>
@@ -72,11 +74,12 @@ const Home = () => {
                   </Carousel.Caption>
                 </Carousel.Item>
             </Carousel>
-         </div>
-        <div className="home-body">
+         </section>
+
+          <section className="home-description">
+
           <h2 className='description'>Clemmeridian Group</h2>
           <div className='line'></div>
-          <div className="home-description">
 
             <div className='intro'>
               <p>
@@ -84,23 +87,25 @@ const Home = () => {
               </p>
             </div>
             
-            <div className='desc-left'>
-              <img  src={africa} alt="africa" />
+            <div className="desc">
+              <div className='desc-left'>
+                <img src={africa} alt="africa" />
+              </div>
+              <div className='desc-right'>
+                <p className='one'>In Clemmeridian we see Africa’s challenges as business opportunities. We are business enablers.</p>
+                <p className='two'>As the decision to invest in Africa becomes more prevalent, we are here to assist you in uncovering economic opportunities that match your focus, assessing potential risks, and navigating through the roadblocks to your intended destination.</p>
+                </div> 
             </div>
-            <div className='desc-right'>
-               <p>As the decision to invest in Africa becomes more prevalent, we are here to assist you in uncovering economic opportunities that match your focus, assessing potential risks, and navigating through the roadblocks to your intended destination.</p>
-              <p>In Clemmeridian we see Africa’s challenges as business opportunities. We are business enablers.</p>
-            </div> 
-          </div>
+          </section>
 
-          <div className='home-vision'>
+          <section className='home-vision'>
             <div>
               <h1>Our Vision</h1>
               <h5>To be a world leader at connecting investors around the globe to African business opportunities</h5>
             </div>
-          </div>
+          </section>
           
-          <div className="home-services">
+          <section className="home-services">
             <div className="services-title">
               <h2>Our Subsidiary services</h2>
             </div>
@@ -130,9 +135,8 @@ const Home = () => {
                 </div>
               </div>
             </div>
-          </div>
+          </section>
           
-        </div>
     </div>
   )
 }

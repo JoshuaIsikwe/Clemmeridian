@@ -32,7 +32,7 @@ const About = () => {
         <div className="values">
             <h2>Values</h2>
             <div className='line'></div>
-            <p>Our core values define who we are and how we treat our clients. These values shaped our character and are represented by the acronym PIPIR.</p>
+            <p className='values-intro'>Our core values define who we are and how we treat our clients. These values shaped our character and are represented by the acronym PIPIR.</p>
 
             <div className='values-section'>
               <div className="value-row">

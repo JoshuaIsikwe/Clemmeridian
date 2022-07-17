@@ -12,9 +12,11 @@ nav{
     display: flex;
     text-transform: uppercase;
 }
-.logo:hover{
+.logo-link:hover{
     transform: scale(1.03);
     transition: .5s;
+    color: #4169E1;
+    font-weight: bolder;
 }
 .logo img{
     height: 9vh;
@@ -23,7 +25,7 @@ nav{
 }
 .logo-link{
     text-decoration: none;
-    color: red;
+    color: #FF2400;
     letter-spacing: 2px;
     font-size: 25px;
 }
@@ -37,7 +39,7 @@ nav{
 }
 .nav-li{
     text-decoration: none;
-    color: blue;
+    color: #4169E1;
     padding: 5px;
 }
 .nav-li:hover{
@@ -60,7 +62,7 @@ nav{
     text-align: left;
 }
 .carousel h2 {
-    color: red;
+    color: #FF2400;
     text-transform: uppercase;
     font-size: 40px;
     font-weight: 700;
@@ -85,35 +87,43 @@ nav{
     align-items: center;
     margin: auto;
 }
+.intro p{
+    font-size: 20px;
+}
 
 .description{
     text-transform: uppercase;
     font-size: 33px;
     font-weight: 600;
-}
-.home-body{
+    color: #FF2400;
     margin-top: 100px;
-    color: red;
-    font-weight: 500;
-    font-size: large;
-}
-.home-description{
-    display: flex;
-    flex-wrap: wrap;
-    margin-bottom: 100px;
 }
 
+.home-description{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    height: auto;
+}
+.desc{
+    display: flex;
+    background-color: #fff1f1;
+}
 .desc-left{
-    flex: 1;
+   
     display: flex;
     align-items: center;
     margin-right: 2rem;
+    margin-bottom: 100px;
 }
 .desc-left img{
     height: 90vh;
     margin: auto;
 }
 .desc-right{
+    margin-bottom: 100px;
     display: flex;
     flex: 1;
     flex-direction: column;
@@ -123,8 +133,15 @@ nav{
 .desc-right p{
     width: 80%;
 }
+.desc-right .one{
+    font-size: 20px;
+    color: #FF2400;
+}
+.desc-right .two{
+    font-size: 17px;
+}
 .home-services{
-   background-image: #fafafa;
+   background-image: #fff1f1;
    width: 100%;
    padding: 100px 0px;
 }
@@ -142,7 +159,6 @@ nav{
     justify-content: center;
     align-items: center;
     min-height: 400px;
-   
 }
 .home-service-card{
     height: 365px;
@@ -170,13 +186,12 @@ nav{
 .home-service-card i:hover{
     transform: scale(1.10);
     transition: .5s;
-    color: blueviolet;
+    color: #4169E1;
 }
 .home-service-card h5{
     color: black;
     font-size: 23px;
     margin-bottom: 15px;
-
 }
 .pra{
     height: 60vh;
@@ -194,7 +209,7 @@ nav{
 }
 
 .home-service-card .button{
-    background-color: red;
+    background-color: #FF2400;
     color: white;
     text-decoration: none;
     border: 2px solid transparent;
@@ -205,17 +220,16 @@ nav{
     position: absolute;
     left: 30%;
     top: 85%;
-   
 }
 .home-service-card .button:hover{
     background-color: transparent;
     color: #555;
-    border: 2px solid red;
+    border: 2px solid #FF2400;
     cursor: pointer;
 }
 
 .home-vision{
-    background-color: red;
+    background-color: #FF2400;
     color: white;
     padding: 60px;
     display: flex;
@@ -258,23 +272,27 @@ nav{
     flex-wrap: wrap;
 }
 .line{
-    background-color: red;
+    background-color: #FF2400;
     min-height: 2px;
     width: 40%;
     margin: auto;
 }
 .line-1{
-    background-color: red;
+    background-color: #FF2400;
     min-height: 2px;
     width: 40%;
     margin: auto;
     margin-top: 150px;
 }
 .about-card{
-    color: blue;
-    background-color: #fafafa;
+    color: #4169E1;
+    background-color: #fff1f1;
     padding: 40px;
     flex: 1;
+    font-size: 18px;
+}
+.values-intro{
+    font-size: 20px;
 }
 .values-section{
     display: flex;
@@ -283,8 +301,7 @@ nav{
     flex-wrap: wrap;
 }
 .value-item{
-    display: flex;
-    
+    display: flex;   
 }
 .value-item-text{
     display: flex;
@@ -292,16 +309,16 @@ nav{
     text-align: left;
 }
 .value-item h2{
-    color: red;
+    color: #FF2400;
 }
 .value-item i{
     font-size: 22px;
-    color: red;
+    color: #FF2400;
     margin-right: 10px;
 }
 
 .values{
-    color: blue;
+    color: #4169E1;
     width: 80%;
     padding: 40px;
 }
@@ -317,7 +334,7 @@ nav{
     justify-items: center;
     justify-content:center ;
     margin: 50px;
-    background-color: #fafafa;
+    background-color: #fff1f1;
     padding: 20px;
 }
 .structure-2{
@@ -330,13 +347,13 @@ nav{
     padding: 20px;
 }
 .structure-1 h2, .structure-3 h2{
-   color: blue;
+   color: #4169E1;
    font-weight: bold;
    text-transform: uppercase;
    letter-spacing: 1px;
 }
 .structure-2 h2{
-    color: red;
+    color: #FF2400;
     font-weight: bold;
     text-transform: uppercase;
     letter-spacing: 1px;
@@ -350,7 +367,7 @@ nav{
     width: 60%;
 }
 .seperator{
-    background-color: red;
+    background-color: #FF2400;
     min-height: 2px;
     width: 80%;
     margin: auto;
@@ -362,7 +379,7 @@ nav{
     width: 100%;
     min-height: 100vh;
     padding: 2rem;
-    background-color: #fafafa;
+    background-color: #fff1f1;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -382,19 +399,19 @@ nav{
     text-align: left;
 }
 .contact-form{
-    background: linear-gradient(rgb(85, 85, 220),rgb(100, 100, 224));
+    background: linear-gradient(#4169E1,rgb(100, 100, 224));
     position: relative;
 }
 .circle{
     border-radius: 50%;
-    background: red;
+    background: #FF2400;
     position: absolute;
 }
 .circle.one{
     width:130px;
     height: 130px;
     top: 130px;
-    right: -40px;
+    right: -69px;
 }
 .circle.two{
     width:70px;
@@ -407,7 +424,7 @@ nav{
     position: absolute;
     width: 26px;
     height: 26px;
-    background-color: rgb(85, 85, 220);
+    background-color: #4169E1;
     transform: rotate(45deg);
     top:50px;
     left: -13px;
@@ -435,7 +452,7 @@ label{
 .input{
     width: 100%;
     outline: none;
-    border: 2px solid red;
+    border: 2px solid #FF2400;
     background: none;
     padding: 10px 20px;
     color: #fff;
@@ -471,8 +488,8 @@ textarea.input{
 }
 .button{
     padding: 0.6rem 1.3rem;
-    background-color: red;
-    border: 2px solid blueviolet;
+    background-color: #FF2400;
+    border: 2px solid #4169E1;
     font-size: 0.95rem;
     color: #fff;
     border-radius: 25px;
@@ -506,7 +523,7 @@ textarea.input{
     opacity: 0;
     transition: .3s;
     height: 5px;
-    background-color: rgb(85, 85, 220);
+    background-color: #4169E1;
     top: 50%;
     transform: translateY(-50%);
 }
@@ -521,7 +538,6 @@ textarea.input{
     transform: translateY(-50%);
     left: 25px;
     font-size: 0.8rem;
-    
 }
 .input-container.focus span::before, .input-container.focus span::after{
     width: 50%;
@@ -536,7 +552,7 @@ textarea.input{
     position: relative;
 }
 .contact-info .title {
-    color: blue;
+    color: #4169E1;
 }
 .contact-info .text{
     margin: 1.5rem 0.2rem 0;
@@ -552,7 +568,7 @@ textarea.input{
     padding: 2rem 0 0 0;
 }
 .social-media p{
-    color: blue;
+    color: #4169E1;
 
 }
 .social-icons{
@@ -563,7 +579,7 @@ textarea.input{
     width: 35px;
     height: 35px;
     border-radius: 5px;
-    background: linear-gradient(45deg, rgb(47, 47, 226), rgb(255, 81, 81));
+    background: linear-gradient(45deg, #4169E1, rgb(255, 81, 81));
     color: #fff;
     text-align: center;
     line-height: 35px;
@@ -578,7 +594,7 @@ textarea.input{
     position: absolute;
     width: 110px;
     height: 100px;
-    border: 22px solid blue;
+    border: 22px solid #4169E1;
     border-radius: 50%;
     bottom: -40px;
     right: 50px;
@@ -599,7 +615,7 @@ textarea.input{
     position: absolute;
     width: 360px;
     height: 360px;
-    background-color: #fafafa;
+    background-color: #fff1f1;
     border-radius: 50%;
     top: calc(50% - 180px);
     left: calc(50% - 180px);
@@ -619,7 +635,7 @@ textarea.input{
     height: 80vh;
     width: 100%;
     margin-bottom: 70px;
-    color: red;
+    color: #FF2400;
 }
 .header img{
     height: 100%;
@@ -641,7 +657,7 @@ textarea.input{
   left: 16px;
   min-height: 10px;
   width: 70%;
-  background: linear-gradient(to right,red,rgb(60, 60, 199));;
+  background: linear-gradient(to right,#FF2400,#4169E1);;
 }
 .section-1{
     display: flex;
@@ -651,7 +667,7 @@ textarea.input{
 }
 .section-1 i{
     font-size: 140px;
-    color: red;
+    color: #FF2400;
 }
 .left-section{
     flex: 1;
@@ -665,7 +681,7 @@ textarea.input{
 }
 .p-bold{
     font-weight: bold;
-    color: red;
+    color: #FF2400;
     font-size: large;
 }
 .right-section{
@@ -677,7 +693,7 @@ textarea.input{
     bottom: 0;
     right: 0;
     left: 0;
-    background: linear-gradient(rgb(85, 85, 220),rgb(100, 100, 224));
+    background: #191919;
     height: auto;
     width: 100%;
     font-family: "Open Sans";
@@ -726,7 +742,7 @@ textarea.input{
     
 }
 .footer-bottom{
-    background: #000;
+    background: black;
     padding: 20px 0;
     text-align: center;
 }
@@ -750,7 +766,7 @@ textarea.input{
     height: 80vh;
     width: 80%;
    margin: 50px auto;
-   border-radius: 50px;
+   background-color:#4169E1; 
 }
 .service-card{
     display: flex;
@@ -760,7 +776,7 @@ textarea.input{
 
 .services-box-name, .services-box-icon{
     height: 40vh ;    
-    background-color: blueviolet;
+    background-color:#4169E1;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -774,12 +790,12 @@ textarea.input{
     text-transform: uppercase;
 }
 .services-box-name:hover{
-    background-color: red;
-    transform: translateY(-50px);
+    background-color: #FF2400;
+    transform: scale(1.05);
     transition: .5s;
 }
 .services-box-icon:hover{
-    transform: translateY(50px);
+    transform: scale(1.05);
     transition: .5s;
     font-size: 50px;
     opacity: 0.9;
@@ -809,7 +825,7 @@ textarea.input{
     margin: 10px;
 }
 .list-item i{
-    color: red;
+    color: #FF2400;
     font-size: 30px;
     margin-right: 20px;
 }
@@ -821,7 +837,7 @@ textarea.input{
   text-align: justify;
 }
 .service-section h5{
-    color: blue;
+    color: #4169E1;
     font-weight: bold;
 }
 .service-item{
@@ -854,13 +870,13 @@ textarea.input{
         left: -100%;
         width: 100%;
         flex-direction: column;
-        background: linear-gradient(rgb(85, 85, 220),rgb(100, 100, 224));
+        background: linear-gradient(#4169E1,rgb(100, 100, 224));
         opacity: 1;
         transition: all 0.6s ease;
         z-index: 9999;
     }
 .nav-links.active{
-    background: linear-gradient(rgb(85, 85, 220),rgb(100, 100, 224));
+    background: linear-gradient(rg#4169E1,rgb(100, 100, 224));
     left: 0;
     opacity: 1;
     transition: all 0.6s ease;
@@ -896,10 +912,10 @@ textarea.input{
     cursor: pointer;
 }
 .hamburger:hover{
-    color: red;
+    color: #FF2400;
 }
 
-/*Conatact*/
+/*Contact*/
 .form{
     grid-template-columns: 2fr
 }
