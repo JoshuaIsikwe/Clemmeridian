@@ -7,6 +7,7 @@ nav{
     -webkit-box-shadow:0px 1px 1px black;
  -moz-box-shadow:0px 1px 1px black;
  box-shadow:0px 1px 1px black;
+ z-index: 1000;
 }
 .logo{
     display: flex;
@@ -56,7 +57,6 @@ nav{
 .carousel-caption {
     position: absolute;
     top: 25%;
-    
 }
 .carousel h4{
     text-align: left;
@@ -110,18 +110,21 @@ nav{
 .desc{
     display: flex;
     background-color: #fff1f1;
+    
 }
 .desc-left{
-   
     display: flex;
     align-items: center;
     margin-right: 2rem;
     margin-bottom: 100px;
+    
 }
 .desc-left img{
     height: 90vh;
     margin: auto;
+    
 }
+
 .desc-right{
     margin-bottom: 100px;
     display: flex;
@@ -388,7 +391,6 @@ nav{
 .form{
     width: 100%;
     max-width: 820px;
-    height: 500px;
     background-color: #fff;    
     border-radius: 10px;
     box-shadow: 0 0  20px 1px rgba(0, 0, 0, 0.4);
@@ -401,6 +403,7 @@ nav{
 .contact-form{
     background: linear-gradient(#4169E1,rgb(100, 100, 224));
     position: relative;
+    
 }
 .circle{
     border-radius: 50%;
@@ -439,20 +442,20 @@ form{
     font-weight: 500;
     font-size: 1.5rem;
     line-height: 1;
-    margin-bottom: 30px;
+    margin-bottom: 0.7rem;
     color: #fff;
 }
 .input-container{
     position: relative;
-    margin: 15px 0;
+    margin: 1rem 0;
 }
 label{
-  
+  display: none;
 }
 .input{
     width: 100%;
     outline: none;
-    border: 2px solid #FF2400;
+    border: 1px solid #FF2400;
     background: none;
     padding: 10px 20px;
     color: #fff;
@@ -462,7 +465,7 @@ label{
     border-radius: 25px;
     transition: .3s;
 }
-textarea.input{
+textarea.input{ 
     padding: 15px 20px;
     min-height: 110px;
     border-radius: 22px;
@@ -539,7 +542,7 @@ textarea.input{
     left: 25px;
     font-size: 0.8rem;
 }
-.input-container.focus span::before, .input-container.focus span::after{
+.input-container.focus span::before, .input-container.focus span:after{
     width: 50%;
     opacity: 1;
 }
@@ -561,8 +564,10 @@ textarea.input{
     display: flex;
     color: #555;
     margin:  0.7rem 0;
-    align-items: center;
+    
     font-size: 18px;
+    text-align: left;
+    
 }
 .social-media{
     padding: 2rem 0 0 0;
@@ -586,6 +591,7 @@ textarea.input{
     margin-right: 0.5rem;
     transition: 0.4s;
 }
+
 .social-icons a:hover{
     transform: scale(1.10);
 }
@@ -618,16 +624,9 @@ textarea.input{
     background-color: #fff1f1;
     border-radius: 50%;
     top: calc(50% - 180px);
-    left: calc(50% - 180px);
+    left: calc(50% - 180px); 
 }
-.square{
-    position: absolute;
-    height: 400px;
-    top: 50%;
-    left: 50%;
-    transform: translate(181%,11%);
-    opacity: 0.2;
-}
+
 /*Company structure Pages (Investment, Consults, Foundation)*/
 .header{
     position: relative;
@@ -917,19 +916,30 @@ textarea.input{
 
 /*Contact*/
 .form{
-    grid-template-columns: 2fr
+    grid-template-columns: 1fr
 }
-.contact-container{
-    position: relative;
-    width: 100%;
-    min-height: 200vh;
-
-    justify-content: center;
+.contact-info::before{
+    bottom: initial;
+    top: -55px;
+    right: 65px;
+    transform: scale(0.95);
 }
-.contact-container{
-    padding: ;
+.contact-form::before{
+    top: -13px;
+    left: initial;
+    right: 70px;
 }
-
+.big-circle{
+    bottom: 75%;
+    transform: scale(0.9) translate(-40%, 30%);
+    right: 50%;
+}
+.text{
+    margin: 1rem 0 1.5rem 0;
+}
+.social-media{
+    padding: 1.5rem 0 0 0;
+}
 
 /*Foundation*/
 .left-section{
@@ -938,4 +948,35 @@ textarea.input{
     width: 100%;
     text-align: left;
 }
+}
+@media (max-width: 480px) {
+    .contact-container{
+        padding: 1.5rem;
+    }
+    .contact-info::before{
+        display: none;
+    }
+    form, .contact-info{
+        padding: 1.7rem, 1.6rem;
+    }
+    .text, .information, .social-media p{
+        font-size: 0.6rem;
+    }
+    .form-title{
+        font-size: 1.15rem;
+    }
+    .social-icons a{
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+    }
+    .icon{
+        width: 23px;
+    }
+    .input{
+        padding: 0.45rem 1.2rem;
+    }
+    .button{
+        padding: 0.45rem 1.2rem;
+    }
 }

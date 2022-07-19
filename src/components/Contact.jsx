@@ -60,9 +60,9 @@ const Contact = () => {
           <span className="circle one"></span>
           <span className="circle two"></span>
 
-          <form action="">
+          <form action="" >
             <h3 className='form-title'>Contact us</h3>
-            <div className="input-container">
+            <div className="input-container ">
               <input type="text" name='name' className='input'/>
               <label htmlFor=""> Full Name</label>
               <span>Full name</span>

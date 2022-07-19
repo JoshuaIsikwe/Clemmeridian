@@ -1,27 +1,64 @@
 
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import React, { useEffect, useRef, useState } from 'react'
+import React, { useEffect} from 'react'
 import africa from "../images/Africa.png"
 import logo from "../images/logo.jpg"
 import 'bootstrap/dist/css/bootstrap.css';
 import { Carousel } from 'react-bootstrap'
 import { Link } from 'react-router-dom';
-import gsap, { CSSPlugin } from 'gsap';
-import ScrollTrigger from 'gsap/ScrollTrigger';
+import gsap from 'gsap';
 import { Power3 } from 'gsap/gsap-core';
-import { useInView } from 'react-intersection-observer';
+import ScrollTrigger from 'gsap/ScrollTrigger';
 
 
 
 
-
+gsap.registerPlugin(ScrollTrigger)
 
 
 const Home = () => {
   
-
   
+ 
+  useEffect(()=>{
+    var t1= gsap.timeline({delay:2})
+    t1.from('.logo',{y:-30, stagger:0.5 , ease:Power3.easeOut, opacity:0}, 0.15, 'Start')
+    t1.from('.carousel',{y: 100, opacity:0, ease:Power3.easeOut, delay:0.2}, 'Start')
+    
+      const boxes = gsap.utils.toArray('.description, .desc-left');
+        boxes.forEach(box => {
+          gsap.from(box, { 
+            y: -100, opacity:0, ease:Power3.easeOut,delay:0.2,
+            scrollTrigger: {
+              trigger: box,
+              toggleActions: 'restart none none none',
+              scrub: true
+            }
+          })
+      })
+    gsap.from('.intro',{x: -30, opacity:0, ease:Power3.easeOut, delay:1, duration:3,
+      scrollTrigger:{
+        trigger:'.intro',
+        toggleActions: 'restart none none none',
+      },
+    }, 'Start')
+    gsap.from('.desc-right p',{x: -30, opacity:0, ease:Power3.easeOut, delay:1,stagger:0.5,
+      scrollTrigger:{
+        trigger:'.desc-right p',
+        toggleActions: 'restart none none none',
+      },
+    }, 'Start')
+    gsap.from('.home-service-card',{y: -50, opacity:0, ease:Power3.easeOut, delay:1,stagger:0.5,
+      scrollTrigger:{
+        trigger:'.home-service-card',
+        toggleActions: 'restart none none none',
+      },
+    }, 'Start')
+  })
+  //.from(".home", {duration:2,opacity:0})
+  //.from(".intro p", {opacity:0, scale:0,ease:"back"})
+  //.from(".desc-left img", {y:160,stagger:0.1,duration:0.8, ease:"back"})
   return (
+
     <div  className="home">
        
          <section className='carousel'>
@@ -76,9 +113,12 @@ const Home = () => {
             </Carousel>
          </section>
 
-          <section className="home-description">
+         <div className="home-body">
+             <section className="home-description">
 
-          <h2 className='description'>Clemmeridian Group</h2>
+          <div className="home-title">
+            <h2 className='description' >Clemmeridian Group</h2>
+          </div>
           <div className='line'></div>
 
             <div className='intro'>
@@ -89,6 +129,7 @@ const Home = () => {
             
             <div className="desc">
               <div className='desc-left'>
+                
                 <img src={africa} alt="africa" />
               </div>
               <div className='desc-right'>
@@ -136,7 +177,7 @@ const Home = () => {
               </div>
             </div>
           </section>
-          
+         </div>
     </div>
   )
 }
