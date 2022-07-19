@@ -3,8 +3,13 @@ import "./style.css"
 import investment from  "../images/Investment.jpg"
 import consult from  "../images/consult.jpg"
 import training from  "../images/training.jpg"
+import gsap from 'gsap'
+import ScrollTrigger from 'gsap/ScrollTrigger'
+import { Power3 } from 'gsap/gsap-core'
 
+gsap.registerPlugin(ScrollTrigger)
 const Services = () => {
+
   return (
     <div className='services'>
         <div className="page-title">
@@ -12,7 +17,7 @@ const Services = () => {
             <div className='line'></div>
         </div>
         
-        <div className="service-board">
+        <section className="service-board">
           <div className="service-card">
             <div className='services-box-name'><h2>Investment</h2></div>
             <div className='services-box-icon'><img src={investment} alt="" /></div>
@@ -25,9 +30,9 @@ const Services = () => {
             <div className='services-box-name'><h2>Business Development & Training</h2></div>
             <div className='services-box-icon'><img src={training} alt="" /></div>
           </div>
-        </div>
+        </section>
 
-        <div className="service-section">
+        <section className="service-section">
           <div className="service-item">
             <h5>
               Identification and development of investment and business opportunities in Africa
@@ -141,9 +146,9 @@ const Services = () => {
             Considering the dearth of skilled manpower is some African countries, we help source and manage skilled personnel in clients’ country of operation. We also guide clients in dealing with the countries’ labour law requirements. 
             </p>
           </div>
-        </div>
+        </section>
         
-        <div className="industries">
+        <section className="industries">
             <h4>Clemmeridian Group so far has been able to work in various sectors</h4>                                  
             <div className="list">
               <div className='left-list'>
@@ -178,7 +183,7 @@ const Services = () => {
                 </div>
               </div>
             </div>
-        </div>
+        </section>
     </div>
   )
 }
