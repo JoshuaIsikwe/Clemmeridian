@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import "./style.css"
 import investment from  "../images/Investment.jpg"
 import consult from  "../images/consult.jpg"
@@ -8,7 +8,22 @@ import ScrollTrigger from 'gsap/ScrollTrigger'
 import { Power3 } from 'gsap/gsap-core'
 
 gsap.registerPlugin(ScrollTrigger)
-const Services = () => {
+const Services = () => {  
+  useEffect(()=>{
+    gsap.from('.service-card',{y: -50, opacity:0, ease:Power3.easeOut, delay:2,stagger:0.5},'Start')
+    gsap.from('.service-item',{x: -50, opacity:0, ease:Power3.easeOut, delay:1,stagger:0.5,
+      scrollTrigger:{
+        trigger:'.service-item',
+        toggleActions: 'restart none none none',
+      },
+    }, 'Start')
+    gsap.from('.list-item',{x: -50, opacity:0, ease:Power3.easeOut, delay:1,stagger:0.8,
+      scrollTrigger:{
+        trigger:'.list-item',
+        toggleActions: 'restart none none none',
+      },
+    }, 'Start')
+  })
 
   return (
     <div className='services'>

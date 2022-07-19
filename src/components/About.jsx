@@ -1,8 +1,37 @@
 import React from 'react'
 import "./style.css"
 import together from  "../images/together.jpg"
+import gsap, { Power3 } from 'gsap'
+import ScrollTrigger from 'gsap/ScrollTrigger'
+import { useEffect } from 'react'
 
+gsap.registerPlugin(ScrollTrigger)
 const About = () => {
+  useEffect(()=>{
+     const boxes = gsap.utils.toArray('.p-bold,.values-intro,.company-structure h2');
+        boxes.forEach(box => {
+          gsap.from(box, { 
+            x: -100, opacity:0, ease:Power3.easeOut,delay:0.4,
+            scrollTrigger: {
+              trigger: box,
+              toggleActions: 'restart none none none',
+              scrub: true
+            }
+          })
+      })
+    gsap.from('.about-card p',{y: -50, opacity:0, ease:Power3.easeOut, delay:1,stagger:0.8,
+      scrollTrigger:{
+        trigger:'.about-card p',
+        toggleActions: 'restart none none none',
+      },
+    }, 'Start')
+    gsap.from('.value-item',{x: -50, opacity:0, ease:Power3.easeOut, delay:1,stagger:0.8,
+      scrollTrigger:{
+        trigger:'.value-item',
+        toggleActions: 'restart none none none',
+      },
+    }, 'Start')
+  })
   return (
     <div className='about'>
          <div className="page-title">

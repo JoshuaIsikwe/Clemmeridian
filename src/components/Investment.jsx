@@ -1,7 +1,19 @@
+import gsap, { Power3 } from 'gsap'
+import ScrollTrigger from 'gsap/ScrollTrigger'
 import React from 'react'
+import { useEffect } from 'react'
 import investment from  "../images/Investment1.jpg"
 
+gsap.registerPlugin(ScrollTrigger)
 const Investment = () => {
+  useEffect(()=>{
+    gsap.from('.left-section li',{x: -50, opacity:0, ease:Power3.easeOut, delay:1,stagger:0.8,
+      scrollTrigger:{
+        trigger:'.left-section li',
+        toggleActions: 'restart none none none',
+      },
+    }, 'Start')
+  })
   return (
     <div>
     <div className="header">

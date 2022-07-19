@@ -1,7 +1,21 @@
+import gsap from 'gsap'
+import { Power3 } from 'gsap/gsap-core'
+import ScrollTrigger from 'gsap/ScrollTrigger'
 import React from 'react'
+import { useEffect } from 'react'
 import consult from  "../images/Consult1.jpg"
 
+gsap.registerPlugin(ScrollTrigger)
 const Consult = () => {
+
+  useEffect(()=>{
+    gsap.from('.left-section li',{x: -50, opacity:0, ease:Power3.easeOut, delay:1,stagger:0.8,
+      scrollTrigger:{
+        trigger:'.left-section li',
+        toggleActions: 'restart none none none',
+      },
+    }, 'Start')
+  })
   return (
     <div>
     <div className="header">
@@ -23,7 +37,7 @@ const Consult = () => {
                 The services rendered by Clemmeridian Consults, being a tax and financial advisory entity include: 
                 </p>
             <ul>
-              <li>Provision of tax management consultancy services to public and private organisations. </li>
+              <li className='li'>Provision of tax management consultancy services to public and private organisations. </li>
               <li>Develops strategies for the government on how to expand tax revenue base.</li>
               <li>Drafting of tax laws for the government tax agencies.</li>
               <li>Provision of Tax clinics for public and private sector entities.</li>

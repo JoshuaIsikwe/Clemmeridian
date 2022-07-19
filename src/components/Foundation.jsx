@@ -1,9 +1,20 @@
+import gsap, { Power3 } from 'gsap'
+import ScrollTrigger from 'gsap/ScrollTrigger'
 import React from 'react'
+import { useEffect } from 'react'
 import foundation from '../images/Foundation.jpg'
 import "./style.css"
 
-
+gsap.registerPlugin(ScrollTrigger)
 const Foundation = () => {
+useEffect(()=>{
+  gsap.from('.left-section li',{x: -50, opacity:0, ease:Power3.easeOut, delay:1,stagger:0.8,
+    scrollTrigger:{
+      trigger:'.left-section li',
+      toggleActions: 'restart none none none',
+    },
+  }, 'Start')
+})
   return (
     <div>
         <div className="header">
