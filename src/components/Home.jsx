@@ -81,7 +81,7 @@ const Home = () => {
                     alt="2nd slide"
                             />
                   <Carousel.Caption>
-                    <h2 >Clemmeridian Investment Ltd </h2>
+                    <h2  >Clemmeridian Investment Ltd </h2>
                     <h4>Solution provider to those who wish to engage in Africa </h4>
                   </Carousel.Caption>
                 </Carousel.Item>
@@ -141,7 +141,7 @@ const Home = () => {
 
           <section className='home-vision'>
             <div>
-              <h1>Our Vision</h1>
+              <h2>Our Vision</h2>
               <h5>To be a world leader at connecting investors around the globe to African business opportunities</h5>
             </div>
           </section>
