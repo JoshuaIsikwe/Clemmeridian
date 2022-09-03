@@ -72,28 +72,28 @@ const Contact = () => {
               <input type='text'
                 ref={inputRef}
                name='name' className='input' placeholder='Full name'/>
-              <label htmlFor=''> Full Name</label>
+              
               <span>Full name</span>
             </div>
             <div className='input-container' >
               <input type='tel' 
                 ref={inputRef}
               name='number' className='input' placeholder='Phone number'/>
-              <label htmlFor=''>Phone Number</label>
+              
               <span>Phone number</span>
             </div>
             <div className='input-container' >
               <input type='email' 
                 ref={inputRef}
               name='email' className='input' placeholder='Email-address'/>
-              <label htmlFor=''> Email-address</label>
+              
               <span>Email-address</span>
             </div>
             <div className='input-container ' >
               <textarea 
                 ref={inputRef}
               name='message' className='input' placeholder='Message'></textarea>
-              <label htmlFor=''>Message</label>
+              
               <span>Message</span>
             </div>
             <input type='submit' value='send' className='button bg-sky-700 hover:bg-slate-200'/>
