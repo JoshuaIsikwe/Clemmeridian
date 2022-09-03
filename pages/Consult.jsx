@@ -5,12 +5,12 @@ import { FaChalkboardTeacher } from 'react-icons/fa'
 const Consult = () => {
   return (
     <div>
-    <div className="header relative w-full text-center mb-16">
+    <div className='header relative w-full text-center mb-16'>
         <Image src='/../public/images/Consult1.jpg' width='1360' height='500' priority alt='/'></Image>
-      <div class="division-title absolute uppercase font-bold text-justify bottom-1/3 left-4 text-2xl md:text-4xl lg:text-6xl">Clemmeridian Consults</div>
-      <div class="division-line absolute w-5/6 bottom-1/4 left-4 h-2 bg-gradient-to-r from-red-500 to-blue-600"></div>
+      <div className='division-title absolute uppercase font-bold text-justify bottom-1/3 left-4 text-2xl md:text-4xl lg:text-6xl'>Clemmeridian Consults</div>
+      <div className='division-line absolute w-5/6 bottom-1/4 left-4 h-2 bg-gradient-to-r from-red-500 to-blue-600'></div>
     </div>
-    <div className="foundation-body">
+    <div className='foundation-body'>
         <div>
             
             <div className='line-1'></div>

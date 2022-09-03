@@ -25,10 +25,10 @@ const Navbar = () => {
                 <Link href='/About'>
                     <li className='ml-10 relative peer text-sm uppercase ease-in text-center border-blue-500 hover:font-semibold'>Our Company</li>
                 </Link>
-                  <div class="hidden absolute peer-hover:flex hover:flex flex-col bg-white drop-shadow-lg">
-                      <a class="p-2 text-red-500 no-underline hover:bg-gray-200" href="/Investment">INVESTMENT</a>
-                      <a class="p-2 text-red-500 no-underline hover:bg-gray-200" href="/Consult">CONSULT</a>
-                      <a class="p-2  text-red-500 no-underline hover:bg-gray-200" href="/Foundation">FOUNDATION</a>
+                  <div className="hidden absolute peer-hover:flex hover:flex flex-col bg-white drop-shadow-lg">
+                      <Link href='/Investment'><li className="p-2 text-red-500 no-underline hover:bg-gray-200">INVESTMENT</li></Link>
+                      <Link href='/Consult'><li className="p-2 text-red-500 no-underline hover:bg-gray-200">CONSULT</li></Link>
+                      <Link href='/Foundation'><li className="p-2  text-red-500 no-underline hover:bg-gray-200" >FOUNDATION</li></Link>
                   </div>
                </div>
                 <Link href='/Services'>
@@ -36,9 +36,6 @@ const Navbar = () => {
                 </Link>
                 <Link href='/Contact'>
                   <li className='ml-10 text-sm uppercase ease-in border-blue-500 hover:font-semibold hover:border-b hover:scale-105 '>Contact</li>
-                </Link>
-                <Link href='/Test'>
-                  <li className='ml-10 text-sm uppercase ease-in border-blue-500 hover:font-semibold hover:border-b hover:scale-105 '>Test</li>
                 </Link>
               </ul>
               <div onClick={handleNav} className='md:hidden mr-6 cursor-pointer'>
@@ -68,10 +65,10 @@ const Navbar = () => {
                   <Link href='/About'>
                     <li className='py-2 peer text-sm'>Our Company</li>
                   </Link>
-                  <div class="hidden absolute peer-hover:flex hover:flex flex-col bg-white drop-shadow-lg">
-                      <a class="p-2 text-red-500 no-underline hover:bg-gray-200" href="/Investment">INVESTMENT</a>
-                      <a class="p-2 text-red-500 no-underline hover:bg-gray-200" href="/Consult">CONSULT</a>
-                      <a class="p-2  text-red-500 no-underline hover:bg-gray-200" href="/Foundation">FOUNDATION</a>
+                  <div className="hidden absolute peer-hover:flex hover:flex flex-col bg-white drop-shadow-lg">
+                      <Link href='/investment'><li className="p-2 text-red-500 no-underline hover:bg-gray-200">INVESTMENT</li></Link>
+                      <Link href='/Consult'><li className="p-2 text-red-500 no-underline hover:bg-gray-200">CONSULT</li></Link>
+                      <Link href='/Foundation'><li className="p-2  text-red-500 no-underline hover:bg-gray-200">FOUNDATION</li></Link>
                 </div>
                 </div>
                 <Link href='/Services'>
