@@ -78,7 +78,7 @@ export default function Home() {
 
             <div className='text-xl text-left my-10 pb-20'>
               <p className='w-10/12 m-auto'>
-              Clemmeridian Group is a group of entities with pan-African focus. These entities are Clemmeridian Investment Ltd, Clemmeridian Consults and Clemmeridian Care Foundation. With over 30 years of shared shareholder's expertise, Clemmeridian Group takes pride in providing superior services to its clients and stakeholders. 
+              Clemmeridian Group is a group of entities with pan-African focus. These entities are Clemmeridian Investment Ltd, Clemmeridian Consults and Clemmeridian Care Foundation. With over 30 years of shared expertise among the shareholders, Clemmeridian Group takes pride in providing superior services to its clients and stakeholders. 
               </p>
             </div>
             

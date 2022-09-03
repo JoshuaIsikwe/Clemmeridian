@@ -6,7 +6,7 @@ const About = () => {
   return ( 
     <div className='about w-full text-center justify-center'>
          <div className='page-title text-center text-4xl m-24'>
-            <h1>Our Company</h1>
+            <h1>OUR COMPANY</h1>
             <div className='line'></div>
         </div>
       <div className='about-container'>
@@ -66,12 +66,12 @@ const About = () => {
         <div className='company-structure my-20 flex flex-col'>
           <h1 className='text-4xl text-blue-500'>COMPANY STRUCTURE</h1>
           <div className='structure-2 p-4 text-left '>
-              <h5>Clemmeridian Group is a group of entities with pan-African focus. These entities are Clemmeridian Investment Ltd, Clemmeridian Consults and Clemmeridian Care Foundation. With over 30 years of shared shareholder's expertise, Clemmeridian Group takes pride in providing superior services to its clients and stakeholders. </h5>
+              <h5>Clemmeridian Group is a group of entities with pan-African focus. These entities are Clemmeridian Investment Ltd, Clemmeridian Consults and Clemmeridian Care Foundation. With over 30 years of shared shareholders expertise, Clemmeridian Group takes pride in providing superior services to its clients and stakeholders. </h5>
           </div>
           <div className='structure-1 flex flex-col p-5  bg-red-50 lg:m-12 '>
             <div className='structure-left text-blue-600 text-3xl mb-5'><h2>CLEMMERIDIAN INVESTMENT</h2></div>
             <div className='structure-right text-justify self-center lg:w-8/12'><p>Clemmeridian Investment focuses on business development across Africa, identifying and arranging possibilities in a way that is beneficial to firms who operate in Africa and those that wish to engage in Africa but are unfamiliar with the African market.</p>
-                  <p className='mt-2'> Clemmeridian's goal in completing due diligence on firms is to generate new business for the African market and function as an intermediary between possible investors and the African market. Doing business in Africa comes with its own set of challenges and methods. We can undertake a hand-carrying exercise to get you to your chosen location.</p>
+                  <p className='mt-2'> Clemmeridian&apos;s goal in completing due diligence on firms is to generate new business for the African market and function as an intermediary between possible investors and the African market. Doing business in Africa comes with its own set of challenges and methods. We can undertake a hand-carrying exercise to get you to your chosen location.</p>
                 </div>
             </div>
             
@@ -79,7 +79,7 @@ const About = () => {
             <div className='structure-2  flex flex-col p-5  lg:m-12'>
               <div className='structure-left  text-blue-600 text-3xl mb-5'><h2>CLEMMERIDIAN CONSULT</h2></div>
               <div className='structure-right text-justify self-center lg:w-8/12'><p>Clemmeridian Consult specializes in tax and financial management consulting, as well as working with state Internal Revenue Services and tax authorities to identify strategies to expand the revenue base. Through strategies such as tax clinics, which are implemented within enterprises, Clemmeridian facilitates procedures to manage their tax and tax-related goals.</p>
-                      <p className='mt-2'>We work with the state government to assist with the required tax draft as well as the proper implementation and execution of tax collection, with our team of tax specialists, professors, and high-profile lawyers. Let's collaborate to develop and implement business growth ideas that work in Africa. We'll assist you in overcoming obstacles on your way to your desired outcome.</p>
+                      <p className='mt-2'>We work with the state government to assist with the required tax draft as well as the proper implementation and execution of tax collection, with our team of tax specialists, professors, and high-profile lawyers. Let us collaborate to develop and implement business growth ideas that work in Africa. We willu assist you in overcoming obstacles on your way to your desired outcome.</p>
               </div>
             </div>
             <div className='seperator'></div>
