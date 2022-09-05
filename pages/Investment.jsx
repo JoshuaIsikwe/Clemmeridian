@@ -9,7 +9,7 @@ const Investment = () => {
     <div>
     <div className="header relative w-full text-center mb-16">
         <Image className='w-full' src='/images/Investment1.jpg' width='1360' height='500' priority alt='/Clemmeridian Investment'></Image>
-      <div className="division-title absolute uppercase font-bold text-justify bottom-1/3 left-4 text-2xl md:text-4xl lg:text-6xl">Clemmeridian Investment Ltd</div>
+      <div className="division-title absolute uppercase font-bold text-justify bottom-1/3 left-4 text-xl md:text-4xl lg:text-6xl">Clemmeridian Investment Ltd</div>
       <div className="division-line absolute w-5/6 bottom-1/4 left-4 h-2 bg-gradient-to-r from-red-500 to-blue-600"></div>
     </div>
     <div className="foundation-body">

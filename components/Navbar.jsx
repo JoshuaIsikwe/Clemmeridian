@@ -66,7 +66,7 @@ const Navbar = () => {
                     <li className='py-2 peer text-sm'>Our Company</li>
                   </Link>
                   <div className="hidden absolute peer-hover:flex hover:flex flex-col bg-white drop-shadow-lg">
-                      <Link href='/investment'><li className="p-2 text-red-500 no-underline hover:bg-gray-200">INVESTMENT</li></Link>
+                      <Link href='/Investment'><li className="p-2 text-red-500 no-underline hover:bg-gray-200">INVESTMENT</li></Link>
                       <Link href='/Consult'><li className="p-2 text-red-500 no-underline hover:bg-gray-200">CONSULT</li></Link>
                       <Link href='/Foundation'><li className="p-2  text-red-500 no-underline hover:bg-gray-200">FOUNDATION</li></Link>
                 </div>
