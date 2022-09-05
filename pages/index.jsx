@@ -34,13 +34,13 @@ export default function Home() {
 
       <Carousel variant='dark'>
       <Carousel.Item>
-        <Image className='d-block w-100' src='/../public/images/logo.jpg' width='1600' height='650' alt='/Clemmeridian'></Image>
+        <Image className='d-block w-100' src='/images/logo.jpg' width='1600' height='650' alt='/Clemmeridian'></Image>
         <Carousel.Caption>
           
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
-      <Image className='d-block w-100' src='/../public/images/InvestSlide.jpg' width='1600' height='650' alt='/'></Image>
+      <Image className='d-block w-100' src='/images/InvestSlide.jpg' width='1600' height='650' alt='/Clemmeridian Investment'></Image>
 
         <Carousel.Caption>
           <h3 className='text-base font-bold md:text-4xl text-black'>CLEMMERIDIAN INVESTMENT Ltd</h3>
@@ -48,7 +48,7 @@ export default function Home() {
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
-      <Image className='d-block w-100' src='/../public/images/consultSlide.jpg' width='1600' height='650' alt='/'></Image>
+      <Image className='d-block w-100' src='/images/consultSlide.jpg' width='1600' height='650' alt='/Clemmeridian Consult'></Image>
         <Carousel.Caption>
           <h3 className='text-base font-bold md:text-4xl'>CLEMMERIDIAN CONSULT</h3>
           <p className='text-sm md:text-2xl'>
@@ -57,7 +57,7 @@ export default function Home() {
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
-      <Image className='d-block w-100' src='/../public/images/FoundationSlide.jpg' width='1600' height='650' alt='/'></Image>
+      <Image className='d-block w-100' src='/images/FoundationSlide.jpg' width='1600' height='650' alt='/Clemmeridian Care Foundation'></Image>
         <Carousel.Caption>
           <h3 className='text-base font-bold md:text-4xl'>CLEMMERIDIAN CARE FOUNDATION</h3>
           <p className='text-sm md:text-2xl'>
@@ -85,7 +85,7 @@ export default function Home() {
             <div className='desc flex flex-wrap h-auto items-center bg-red-50'>
               <div className='desc-left w-full lg:w-1/2 text-center bg-white'>
                 
-                <Image src='/../public/images/Africa.png' width='600' height='600' alt='/'></Image>
+                <Image src='/images/Africa.png' width='600' height='600' alt='/'></Image>
               </div>
               <div className='desc-right w-4/5 m-auto py-10 text-lg text-justify md:p-8 italic lg:w-1/2 '>
                 <p className='one lg:w-4/5 text-red-500 text-2xl'>In Clemmeridian we see Africa’s challenges as business opportunities. We are business enablers.</p>
