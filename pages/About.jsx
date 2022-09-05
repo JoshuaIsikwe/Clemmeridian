@@ -11,7 +11,7 @@ const About = () => {
         </div>
       <div className='about-container'>
         <div className='about-us w-full m-auto justify-items-center'>
-          <Image src='/../public/images/together.jpg'  width='1000' height='500' alt='/' layout=''></Image>
+          <Image src='/images/together.jpg'  width='1000' height='500' alt='/' layout=''></Image>
           <div className='m-14 text-left'>
             <p>Africa is a Continent of great hope and opportunities. Unfortunately, most of these business opportunities in different African Countries are unknown to African and Africa focused Investors. Our job is to identify these opportunities, locate the Investors, navigate through the challenges, and deliver investment solution. We are able to achieve this through our strong relationship with different African Governments and also our knowledge of Africa economy.</p>
             <p className='mt-4'>In Clemmeridian, we see Africa challenges as business opportunities. We are business enablers. We have built strong strategic alliances with major Africa based business and economic analysts operating in different African countries thereby making us able to surpass our clients’ expectations. </p>
