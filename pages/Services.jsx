@@ -65,7 +65,7 @@ const Services = () => {
 
         
         <section className='industries flex flex-col items-center p-10'>
-            <h4>Clemmeridian Group so far has been able to work in various sectors</h4>                                  
+            <h4 className='text-xl'>Clemmeridian Group so far has been able to work in various sectors</h4>                                  
             <div className='list flex flex-wrap list-none '>
               <div className=' mr-10'>
                 <div className=' flex mt-5 '>
