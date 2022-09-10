@@ -2,7 +2,7 @@ import Link from 'next/link'
 import React, { useState } from 'react'
 import Image from 'next/image'
 import {AiOutlineClose,AiOutlineMenu} from 'react-icons/ai'
-
+import { motion } from "framer-motion"
 const Navbar = () => {
   const [nav, setNav] = useState(false)
 
@@ -13,9 +13,11 @@ const Navbar = () => {
   return (
     <div className='sticky w-full h-20 shadow-xl z-[100]'>
         <div className='flex justify-between items-center  w-full h-full px-2 2xl:px-16'>
-            <Link href='/'>
-              <h2 className='font-bold text-xl cursor-pointer ml-5 text-blue-600 ease-in hover:text-red-600 tracking-wider hover:scale-105'>CLEMMERIDIAN</h2>
-            </Link>
+            <motion.div whileHover={{scale:1.1, boxShadow: "0px 0px 8px rgb(255 255 255)"}}>
+              <Link href='/'>
+                <h2 className='font-bold text-xl cursor-pointer ml-5 text-blue-600 ease-in hover:text-red-600 tracking-wider'>CLEMMERIDIAN</h2>
+              </Link>
+            </motion.div>
           <div>
               <ul className='hidden md:flex  mr-6'>
                 <Link href='/'>
@@ -48,7 +50,7 @@ const Navbar = () => {
                         : 'fixed left-[-100%] top-0 p-10 ease-in duration-500'}>
             <div>
                 <div className='flex w-full items-center justify-between'>
-                  <Image src='/images/logo.png' width='87' height='40' alt='/'></Image>
+                  <Image src='/images/logo.png' width='140' height='90' alt='/'></Image>
                   <div onClick={handleNav}  className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer'>
                     <AiOutlineClose size={25}/>
                   </div>

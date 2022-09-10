@@ -1,4 +1,5 @@
 import Document, { Html, Head, Main, NextScript } from 'next/document'
+import { motion } from "framer-motion"
 
 class MyDocument extends Document {
   render() {
