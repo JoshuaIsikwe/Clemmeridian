@@ -47,15 +47,15 @@ const Services = () => {
        <section className='service-board hidden lg:flex w-full m-auto mb-20 bg-blue-600 md:max-w-5xl md:h-80v'>
           <div className='service-card flex flex-1 flex-col'>
             <div className=' h-60 md:h-2/4 bg-blue-600 flex text-xl items-center text-center justify-center ease-in duration-300 hover:bg-red-600 hover:scale-105'><h2 className='font-bold uppercase text-xl'>Investment</h2></div>
-            <div className='services-box-icon h-2/4 bg-blue-600 flex items-center justify-center ease-in duration-300 hover:bg-red-600 hover:scale-105'>  <Image src='/images/Investment.jpg'  width='341' height='240' alt='/Man watering plant shaped as an upward slope graph'></Image></div>
+            <div className='services-box-icon h-2/4 bg-blue-600 flex items-center justify-center ease-in duration-300 hover:bg-red-600 hover:scale-105'>  <Image src='/images/Investment.jpg'  width='341' height='282' alt='/Man watering plant shaped as an upward slope graph'></Image></div>
           </div>
           <div className='service-card flex flex-1 flex-col'>
-            <div className='services-box-icon h-2/4 bg-blue-600 flex items-center justify-center ease-in duration-300 hover:bg-red-600 hover:scale-105 '><Image src='/images/consult.jpg'  width='341' height='240' alt='/Business consultant in a suit with a client'></Image></div>
+            <div className='services-box-icon h-2/4 bg-blue-600 flex items-center justify-center ease-in duration-300 hover:bg-red-600 hover:scale-105 '><Image src='/images/consult.jpg'  width='341' height='282' alt='/Business consultant in a suit with a client'></Image></div>
             <div className=' h-60 md:h-2/4 bg-blue-600 flex items-center text-center justify-center ease-in duration-300 hover:bg-red-600 hover:scale-105'><h2 className='font-bold uppercase text-xl'>Consulting & Advisory Services</h2></div>
           </div>
           <div className='service-card flex flex-1 flex-col'>
             <div className='h-60 md:h-2/4 bg-blue-600 flex items-center text-center justify-center ease-in duration-300 hover:bg-red-600 hover:scale-105'><h2 className='font-bold uppercase text-xl'>Business Development & Training</h2></div>
-            <div className='services-box-icon h-2/4 bg-blue-600 flex items-center justify-center ease-in duration-300 hover:bg-red-600 hover:scale-105 '><Image src='/images/training.jpg'  width='341' height='240' alt='/Business training session'></Image></div>
+            <div className='services-box-icon h-2/4 bg-blue-600 flex items-center justify-center ease-in duration-300 hover:bg-red-600 hover:scale-105 '><Image src='/images/training.jpg'  width='341' height='282' alt='/Business training session'></Image></div>
           </div>
         </section>
 
