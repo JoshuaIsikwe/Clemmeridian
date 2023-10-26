@@ -100,7 +100,7 @@ export default function Home() {
               </motion.div>
             
             <div className='text-xl text-left my-20 pb-20'>
-              <p className='w-10/12 m-auto'>
+              <p className='w-10/12 m-auto text-justify'>
               Clemmeridian Group is a group of entities with pan-African focus. These entities are Clemmeridian Investment Ltd, Clemmeridian Consults and Clemmeridian Care Foundation. With over 30 years of shared expertise among the shareholders, Clemmeridian Group takes pride in providing superior services to its clients and stakeholders. 
               </p>
             </div>
@@ -111,10 +111,10 @@ export default function Home() {
                 
                 <Image src='/images/Africa.png' width='600' height='600' alt='/'></Image>
               </motion.div>
-              <div className='desc-right w-4/5 m-auto py-10 text-lg text-justify md:p-12 italic bg-red-50 lg:w-1/2 '>
+              <div className='desc-right w-4/5 m-auto py-10 text-lg text-justify p-3 md:p-12 italic bg-red-50 lg:w-1/2 '>
                 <motion.p initial={{ opacity: 0, x:-100 }}
                    whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }}
-                   transition={{duration:1.5, type:"tween"}} className='one lg:w-4/5 text-red-500 text-2xl'>In Clemmeridian we see Africa’s challenges as business opportunities. We are business enablers.</motion.p>
+                   transition={{duration:1.5, type:"tween"}} className='one lg:w-4/5 text-red-500 text-xl'>In Clemmeridian we see Africa’s challenges as business opportunities. We are business enablers.</motion.p>
                 <motion.p variants={framerVariants} initial="hiddenX" whileInView="visibleX" viewport={{ once: true }}
                    transition={{duration:1, type:"tween"}}className='two lg:w-4/5'>As the decision to invest in Africa becomes more prevalent, we are here to assist you in uncovering economic opportunities that match your focus, assessing potential risks, and navigating through the roadblocks to your intended destination.</motion.p>
                 </div> 
