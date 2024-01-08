@@ -148,7 +148,7 @@ export default function Home() {
               </div>
               <div className='rounded-3xl shadow-xl shadow-gray-400 relative flex flex-col p-8 items-center text-center h-96 w-3/4 mx-auto mt-10 md:w-2/3  lg:w-1/4'>
                 <FaMoneyBill className=' text-5xl text-gray-700 hover:scale-110  hover:text-blue-500'/>
-                <h5 className='text-2xl font-bold mb-2'>Investment</h5>
+                <h5 className='text-2xl font-bold mb-2'>Investment Solutions</h5>
                 <div className='pra '>
                   <p>We focus on business development and research</p>
                   <Link href='/Services'>
