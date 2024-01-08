@@ -6,7 +6,7 @@ const Foundation = () => {
   return (
     <div>
         <div className='header  relative w-full text-center mb-16'>
-        <Image src='/images/Foundation.jpg' width='1560' height='500' priority  alt='/Clemmeridian Care Foundation'></Image>
+        <Image src='/images/Foundation.jpg' style={{ maxHeight:'80vh'}} width='1560' height='500' priority  alt='/Clemmeridian Care Foundation'></Image>
         <div className='division-title absolute uppercase font-bold text-justify bottom-1/3 left-4 text-xl md:text-4xl lg:text-6xl'>Clemmeridian Care Foundation</div>
         <div className='division-line absolute w-5/6 bottom-1/4 left-4 h-2 bg-gradient-to-r from-red-500 to-blue-600'></div>
         </div>
@@ -15,7 +15,7 @@ const Foundation = () => {
                
                 <div className='line-1'></div>
                 
-                <div className='section-1 flex flex-col items-center'>
+                <div className='section-1 flex flex-col items-center mt-10'>
                   <div className='left-section flex-1 w-4/6' >
                   
                 <h5 className='text-lg'>

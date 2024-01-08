@@ -1,8 +1,10 @@
 import Link from 'next/link'
-import React, { useState } from 'react'
+import React, { use, useEffect, useState } from 'react'
 import Image from 'next/image'
-import {AiOutlineClose,AiOutlineMenu} from 'react-icons/ai'
+import {AiOutlineAim, AiOutlineCaretDown, AiOutlineCaretUp, AiOutlineClose,AiOutlineMenu} from 'react-icons/ai'
 import { motion } from "framer-motion"
+
+
 const Navbar = () => {
   const [nav, setNav] = useState(false)
 
@@ -10,34 +12,46 @@ const Navbar = () => {
     setNav(!nav)
   }
 
+  const [isOpen, setIsOpen] = useState(false);
+  const [isOpenRes, setIsOpenRes] = useState(false);
+  
+  useEffect (()=>{
+    setIsOpen(false)
+  }, [])
   return (
     <div className='sticky w-full h-20 shadow-xl z-[100]'>
         <div className='flex justify-between items-center  w-full h-full px-2 2xl:px-16'>
             <motion.div whileHover={{scale:1.1, boxShadow: "0px 0px 8px rgb(255 255 255)"}}>
-              <Link href='/'>
+              <Link href='/' className='no-underline'>
                 <h2 className='font-bold text-xl cursor-pointer ml-5 text-blue-600 ease-in hover:text-red-600 tracking-wider'>CLEMMERIDIAN</h2>
-              </Link>
+              </Link>            
             </motion.div>
           <div>
               <ul className='hidden md:flex  mr-6'>
-                <Link href='/'>
-                  <li className='ml-10 text-sm uppercase ease-in border-blue-500 hover:font-semibold hover:border-b hover:scale-105 '>Home</li>
+                <Link href='/' className='no-underline'>
+                  <li className='ml-10 text-sm uppercase ease-in px-3 hover:font-semibold hover:border-b hover:scale-105 '>Home</li>
                 </Link>
                <div className=''>
-                <Link href='/About'>
-                    <li className='ml-10 relative peer text-sm uppercase ease-in text-center border-blue-500 hover:font-semibold'>Our Company</li>
+                <Link href='' className='no-underline hover:border-b hover:scale-105' onClick={() => setIsOpen((prev)=> !prev)} >
+                    <li className='ml-10 relative flex items-center gap-1 text-sm uppercase ease-in px-2 text-center cursor-pointer hover:font-semibold before:'>Our Company {!isOpen ?(<AiOutlineCaretDown/>):
+                   (<AiOutlineCaretUp/>) }</li>
                 </Link>
-                  <div className="hidden absolute peer-hover:flex hover:flex flex-col bg-white drop-shadow-lg">
-                      <Link href='/Investment'><li className="p-2 text-red-500 no-underline hover:bg-gray-200">INVESTMENT</li></Link>
-                      <Link href='/Consult'><li className="p-2 text-red-500 no-underline hover:bg-gray-200">CONSULTS</li></Link>
-                      <Link href='/Foundation'><li className="p-2  text-red-500 no-underline hover:bg-gray-200" >FOUNDATION</li></Link>
-                  </div>
+                {isOpen && (
+                  <div className='ml-4 gap-2 rounded border-gray-400 absolute right-auto w-40 flex flex-col bg-blue-100 shadow-sm p-2 top-12'>
+                  <Link className='no-underline cursor-pointer px-2 rounded hover:bg-white border-b' href='/About'>About Us</Link>
+                  <Link className='no-underline cursor-pointer px-2 rounded hover:bg-white' href='/Investment'>Investment Solutions</Link>
+                  <Link className='no-underline cursor-pointer px-2 rounded hover:bg-white' href='/Consult' >Consults</Link>
+                  <Link className='no-underline cursor-pointer px-2 rounded hover:bg-white' href='/Foundation'>Foundation</Link>
+                  {/*<Link className='no-underline cursor-pointer px-2 rounded hover:bg-white' href='/Team'>The Team</Link>*/}
+                </div>)
+                }
+                  
                </div>
-                <Link href='/Services'>
-                  <li className='ml-10 text-sm uppercase ease-in border-blue-500 hover:font-semibold hover:border-b hover:scale-105 '>Services</li>
+                <Link href='/Services' className='no-underline'>
+                  <li className='ml-10 text-sm uppercase ease-in px-2 hover:font-semibold hover:border-b hover:scale-105 '>Services</li>
                 </Link>
-                <Link href='/Contact'>
-                  <li className='ml-10 text-sm uppercase ease-in border-blue-500 hover:font-semibold hover:border-b hover:scale-105 '>Contact</li>
+                <Link href='/Contact' className='no-underline'>
+                  <li className='ml-10 text-sm uppercase ease-in px-2 hover:font-semibold hover:border-b hover:scale-105 '>Contact</li>
                 </Link>
               </ul>
               <div onClick={handleNav} className='md:hidden mr-6 cursor-pointer'>
@@ -45,7 +59,7 @@ const Navbar = () => {
               </div>
           </div>
         </div>
-        <section className={nav?'md:hidden fixed left-0 top-0 w-full h-screen bg-black/70': '' }>
+        <section className={nav?'md:hidden fixed z-10 left-0 top-0 w-full h-screen bg-black/70': '' }>
           <div className={nav? 'fixed left-0 top-0 w-[75%] sm:w-[60%] md:w-[45%] h-screen bg-[#ecf0f3] p-10 ease-in duration-500' 
                         : 'fixed left-[-100%] top-0 p-10 ease-in duration-500'}>
             <div>
@@ -60,23 +74,28 @@ const Navbar = () => {
             </div>
             <div className='py-4 flex flex-col'>
               <ul className='uppercase'>
-                <Link href='/'>
+                <Link className='no-underline' href='/'>
                   <li className='py-4 text-sm'>Home</li>
                 </Link>
                 <div>
-                  <Link href='/About'>
-                    <li className='py-2 peer text-sm'>Our Company</li>
+                  <Link className='no-underline' href='/About' onClick={() => setIsOpenRes((prev)=> !prev)}>
+                    <li className='py-2 text-sm flex items-center relative'>Our Company{!isOpenRes ?(<AiOutlineCaretDown/>):
+                   (<AiOutlineCaretUp/>) }</li>
                   </Link>
-                  <div className="hidden absolute peer-hover:flex hover:flex flex-col bg-white drop-shadow-lg">
-                      <Link href='/Investment'><li className="p-2 text-red-500 no-underline hover:bg-gray-200">INVESTMENT</li></Link>
-                      <Link href='/Consult'><li className="p-2 text-red-500 no-underline hover:bg-gray-200">CONSULT</li></Link>
-                      <Link href='/Foundation'><li className="p-2  text-red-500 no-underline hover:bg-gray-200">FOUNDATION</li></Link>
+                  {isOpenRes && (
+                  <div className='ml-4 gap-2 rounded border-gray-400 absolute right-auto w-2/3 flex flex-col bg-blue-100 shadow-sm p-2 '>
+                  <Link className='no-underline cursor-pointer px-2 rounded hover:bg-white border-b' href='/About'>About Us</Link>
+                  <Link className='no-underline cursor-pointer px-2 rounded hover:bg-white' href='/Investment'>Investment Solutions</Link>
+                  <Link className='no-underline cursor-pointer px-2 rounded hover:bg-white' href='/Consult' >Consults</Link>
+                  <Link className='no-underline cursor-pointer px-2 rounded hover:bg-white' href='/Foundation'>Foundation</Link>
+                  {/*<Link className='no-underline cursor-pointer px-2 rounded hover:bg-white' href='/Team'>The Team</Link>*/}
+                </div>)
+                }
                 </div>
-                </div>
-                <Link href='/Services'>
+                <Link className='no-underline' href='/Services'>
                   <li className='py-4 text-sm'>Services</li>
                 </Link>
-                <Link href='/Contact'>
+                <Link className='no-underline' href='/Contact'>
                   <li className='py-4 text-sm'>Contact</li>
                 </Link>
               </ul>

@@ -6,7 +6,8 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        'poppins' :['Poppins', 'sans-serif']
+        'poppins' :['Poppins', 'sans-serif'],
+        'Karla' :['Karla', 'sans-serif']
       },
       height: {
         "10v": "10vh",

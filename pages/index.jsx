@@ -1,12 +1,11 @@
 import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
-import Navbar from "../components/Navbar";
 import { FaBalanceScale, FaUserAlt,FaMoneyBill} from "react-icons/fa";
-import Footer from "../components/Footer";
 import Carousel from 'react-bootstrap/Carousel';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { motion } from "framer-motion"
+//import ExampleCarouselImage from 'components/ExampleCarouselImage'
 
 
 
@@ -15,7 +14,7 @@ export default function Home() {
   const framerVariants ={
     hiddenX:{
       opacity:0,
-      x:100
+      x:-100
     },
     visibleX:{
       opacity: 1,
@@ -54,34 +53,34 @@ export default function Home() {
         <motion.div initial={{ opacity: 0, scale: 0.3 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 3 }}>
-            <Image className='d-block w-100' src='/images/logo.jpg' width='1600' height='650' alt='/Clemmeridian'></Image>
+            <Image className='d-block w-100'  src='/images/logo.jpg' style={{maxWidth: '100%', maxHeight:'100vh'}} width='1000' height='650' alt='/Clemmeridian'/>
           </motion.div>
         <Carousel.Caption>
           
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
-        <Image className='d-block w-100' src='/images/InvestSlide.jpg' width='1600' height='650' alt='/Clemmeridian Inve'></Image>
+        <Image className='d-block w-100' src='/images/InvestSlide.jpg' style={{maxWidth: '100%', maxHeight:'100vh'}} width='1000' height='650' alt='/Clemmeridian Investment'/>
 
           <Carousel.Caption>
-            <h3 className='text-base font-bold md:text-4xl text-black'>CLEMMERIDIAN INVESTMENT Ltd</h3>
-            <p className='text-sm md:text-2xl text-black font-bold'>Solution provider to those who wish to engage in Africa</p>
+            <h3 className='text-base font-extrabold md:text-4xl text-red-500'>CLEMMERIDIAN INVESTMENT Ltd</h3>
+            <p className='text-sm md:text-2xl font-semibold text-black '>Solution provider to those who wish to engage in Africa</p>
           </Carousel.Caption>
         </Carousel.Item>
       <Carousel.Item>
-        <Image className='d-block w-100' src='/images/consultSlide.jpg' width='1600' height='650' alt='/Clemmeridian Consult'></Image>
+        <Image className='d-block w-100' src='/images/consultSlide.jpg' style={{maxWidth: '100%', maxHeight:'100vh'}} width='1000' height='650' alt='/Clemmeridian Consults'/>
           <Carousel.Caption>
             <h3 className='text-base font-bold md:text-4xl'>CLEMMERIDIAN CONSULT</h3>
-            <p className='text-sm md:text-2xl'>
+            <p className='text-sm md:text-2xl font-semibold'>
               Tax and financial management consulting, business development and training
             </p>
           </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
-        <Image className='d-block w-100' src='/images/FoundationSlide.jpg' width='1600' height='650' alt='/Clemmeridian Care Foundation'></Image>
+        <Image className='d-block w-100' src='/images/FoundationSlide.jpg' style={{maxWidth: '100%', maxHeight:'100vh'}} width='1000' height='650' alt='/Clemmeridian Care Foundation'/>
           <Carousel.Caption>
             <h3 className='text-base font-bold md:text-4xl'>CLEMMERIDIAN CARE FOUNDATION</h3>
-            <p className='text-sm md:text-2xl'>
+            <p className='text-sm md:text-2xl font-semibold'>
               Giving back to the society
             </p>
           </Carousel.Caption>
@@ -89,14 +88,14 @@ export default function Home() {
     </Carousel>
 
         
-      <main className='flex flex-col mt-20 md:mt-28 items-center'>
+      <main className='flex flex-col mt-24 md:mt-28 items-center'>
              <section className='home-description '>
                 <motion.div variants={framerVariants} initial="hiddenY"
                    whileInView="visibleY" viewport={{ once: true }}>
                 <div className='text-3xl text-red-500 text-center'>
                   <h1>CLEMMERIDIAN GROUP</h1>
-                <div className='line'></div>
-              </div>
+                  <div className='line'></div>
+                </div>
               </motion.div>
             
             <div className='text-xl text-left my-20 pb-20'>
@@ -111,7 +110,7 @@ export default function Home() {
                 
                 <Image src='/images/Africa.png' width='600' height='600' alt='/'></Image>
               </motion.div>
-              <div className='desc-right w-4/5 m-auto py-10 text-lg text-justify p-3 md:p-12 italic bg-red-50 lg:w-1/2 '>
+              <div className='desc-right rounded-3xl w-4/5 m-auto py-10 text-lg text-justify p-3 md:p-12 italic bg-red-50 lg:w-1/2 '>
                 <motion.p initial={{ opacity: 0, x:-100 }}
                    whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }}
                    transition={{duration:1.5, type:"tween"}} className='one lg:w-4/5 text-red-500 text-xl'>In Clemmeridian we see Africa’s challenges as business opportunities. We are business enablers.</motion.p>

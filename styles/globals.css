@@ -4,7 +4,7 @@
 
 @layer base{
   body{
-    @apply bg-white font-poppins 
+    
     }
     main{
       @apply m-auto
@@ -39,6 +39,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  z-index: 0;
 }
 
 .form{
