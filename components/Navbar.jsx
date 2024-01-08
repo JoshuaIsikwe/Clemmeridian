@@ -78,7 +78,7 @@ const Navbar = () => {
                   <li className='py-4 text-sm'>Home</li>
                 </Link>
                 <div>
-                  <Link className='no-underline' href='/About' onClick={() => setIsOpenRes((prev)=> !prev)}>
+                  <Link className='no-underline' href='' onClick={() => setIsOpenRes((prev)=> !prev)}>
                     <li className='py-2 text-sm flex items-center relative'>Our Company{!isOpenRes ?(<AiOutlineCaretDown/>):
                    (<AiOutlineCaretUp/>) }</li>
                   </Link>
