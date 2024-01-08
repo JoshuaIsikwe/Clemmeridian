@@ -16,7 +16,7 @@ const Foundation = () => {
                 <div className='line-1'></div>
                 
                 <div className='section-1 flex flex-col items-center mt-10'>
-                  <div className='left-section flex-1 w-4/6' >
+                  <div className='left-section flex-1 w-5/6 md:w-4/6' >
                   
                 <h5 className='text-lg'>
                     Clemmeridian Group has a social burden to give back to the society and this is done through Clemmeridian Care Foundation.

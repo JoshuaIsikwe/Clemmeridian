@@ -16,8 +16,8 @@ const Consult = () => {
             <div className='line-1'></div>
           
             <div className='section-1 flex flex-col items-center'>
-              <div className='left-section flex-1 w-4/6' >
-              <p className='font-semibold  text-red-500'>Strategic consulting & advisory services, business development and training</p>
+              <div className='left-section flex-1 w-5/6 md:w-4/6' >
+              <p className='font-semibold  text-red-500 text-center'>Strategic consulting & advisory services, business development and training</p>
               
                 <h5>Clemmeridian Consults is a subsidiary of the group and specializes in tax and financial management consulting, business development and training.</h5>
                 <p>Provides strategic advisory services to State Internal Revenue Services and tax authorities on tax revenue growth.
