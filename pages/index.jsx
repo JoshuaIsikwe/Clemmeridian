@@ -68,7 +68,7 @@ export default function Home() {
           </Carousel.Caption>
         </Carousel.Item>
       <Carousel.Item>
-        <Image className='d-block w-100' src='/images/consultSlide.jpg' style={{maxWidth: '100%', maxHeight:'100vh'}} width='1000' height='650' alt='/Clemmeridian Consults'/>
+        <Image className='d-block w-100' src='/images/consultSlide.jpg' style={{maxWidth: '100%',  maxHeight:'100vh'}} width='1000' height='650' alt='/Clemmeridian Consults'/>
           <Carousel.Caption>
             <h3 className='text-base font-bold md:text-4xl'>CLEMMERIDIAN CONSULT</h3>
             <p className='text-sm md:text-2xl font-semibold'>
