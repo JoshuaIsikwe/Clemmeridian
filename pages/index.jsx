@@ -63,7 +63,7 @@ export default function Home() {
         <Image className='d-block w-100' src='/images/InvestSlide.jpg' style={{maxWidth: '100%', maxHeight:'100vh'}} width='1000' height='650' alt='/Clemmeridian Investment'/>
 
           <Carousel.Caption>
-            <h3 className='text-base font-extrabold md:text-4xl text-red-500'>CLEMMERIDIAN INVESTMENT Ltd</h3>
+            <h3 className='text-base font-extrabold md:text-4xl text-red-500'>CLEMMERIDIAN INVESTMENT LTD</h3>
             <p className='text-sm md:text-2xl font-semibold text-black '>Solution provider to those who wish to engage in Africa</p>
           </Carousel.Caption>
         </Carousel.Item>
