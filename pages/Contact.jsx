@@ -41,7 +41,7 @@ const Contact = () => {
           <div className='info'>
             <div className='information'>
               <MdAlternateEmail className='mr-5'/>
-              <p>Enquiry@clemmeridian.com</p>
+              {/* <p>Enquiry@clemmeridian.com</p> */}
             </div>
             <div className='information'>
               <FaPhone className='mr-5'/>
